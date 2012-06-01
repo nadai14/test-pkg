@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  enq_id: 1
+  num: 1
+  answer: MyString
+  next_page_id: 1
+  update_name: MyString
+  update_date: 2012-06-01
+
+two:
+  enq_id: 1
+  num: 1
+  answer: MyString
+  next_page_id: 1
+  update_name: MyString
+  update_date: 2012-06-01

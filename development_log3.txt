@@ -1,0 +1,152 @@
+開発ログ-Ruby on Rails バージョン変更-
+
+Ruby	: 1.9.3-p194
+Rails	: 3.2.4
+
+最新のDevelopmentKitをダウンロードし、展開した場所にリンクを貼る
+例：[$C:\RubyDevKit\devkitvar](RubyDevKitに展開した場合)
+
+gem update でgemを最新の状態に
+
+Rspec のインストール
+gem install rspec
+rspec(2.10.1)
+
+RSpec の色づけ
+gem install win32console
+
+Cucumber のインストール
+gem install cucumber
+cucumber(1.2.0)
+
+主キーに uuid を利用する準備
+gem install uuidtools
+uuidtools(2.1.2)
+
+開発用、テスト用、実装用それぞれ
+mysql> grant select,insert,update,delete,alter,create,drop,index,lock tables,trigger
+ on dapi_development.* to 'dapi'@'localhost' identified by 'dapi';
+mysql> grant select,insert,update,delete,alter,create,drop,index,lock tables,trigger
+ on dapi_test.* to 'dapi'@'localhost' identified by 'dapi';
+mysql> grant select,insert,update,delete,alter,create,drop,index,lock tables,trigger
+ on dapi_production.* to 'dapi'@'localhost' identified by 'dapi';
+
+
+プロジェクトの作成
+C:\Users\koji16\Desktop\test-api>rails new dapi -d mysql --skip-bundle
+
+database.yml でユーザの指定とパスワードの指定
+
+bundle install
+
+rake のバージョンが高すぎた？
+gem install rake -v '0.9.2.2'
+で rake をインストール
+
+今度は coffee-script に異常があるらしい
+gem install coffee-script-source -v '1.3.3'
+
+なんだか足りないのかバージョンがあれなのか
+gem install execjs -v '1.4.0'
+gem install coffee-script -v '2.2.0'
+gem install coffee-rails -v '3.2.2'
+gem install jquery-rails -v '2.0.2'
+gem install mysql2 -v '0.3.11'
+gem install sass -v '3.1.19'
+gem install sass-rails -v '3.2.5'
+gem install uglifier -v '1.2.4'
+
+rake db:create でデータベースを作成 (test DBなど、作りたいDBを指定したい時は　RAILS_ENV='development')
+
+うまくいかないので、
+http://d.hatena.ne.jp/emerald00/20111231/1325288027
+を参照すると、libmysql.dll をruby193の bin に入れるらしい
+
+各テーブルのモデルを作成 
+$rails generate scaffold enq
+ enq_id:integer first_page_id:integer status:integer title:string description:string
+ css:string movie:string thumbnail:string update_name:string update_date:date
+ 
+$rails generate scaffold enq_page
+ enq_id:integer page_id:integer face:string description:string wait_until:time
+ next_page_id:integer update_name:string update_date:date
+ 
+$rails generate scaffold enq_question
+ enq_id:integer num:integer question_id:integer update_name:string update_date:date
+
+$rails generate scaffold branch
+ enq_id:integer num:integer answer:string next_page_id:integer update_name:string update_date:date
+ 
+$rails generate scaffold question
+ question_id:integer kind:string title:string content:string required:boolean answer_content:string
+ answer_description:string update_name:string update_date:date
+ 
+$rails generate scaffold choice
+ question_id:integer choice_id:integer content:string update_name:string update_date:date
+
+$rails generate scaffold answer
+ enq_id:integer num:integer answer:string update_name:string update_date:date
+
+ 
+UUID のヘルパーを用意する
+lib/uuid_helper.rb
+---------------------------------------------------
+require 'rubygems'
+require 'uuidtools'
+
+module UUIDHelper
+  def before_create()
+    self.uuid = UUID.timestamp_create().to_s
+  end
+end
+----------------------------------------------------
+
+RoRで複合キーを管理する
+http://www.oiax.jp/rails/zakkan/composite_primary_keys_1.html
+
+GemFileに以下を追記
+~
+gem 'jquery-rails'
+
+gem "composite_primary_keys", "~> 5.0.4"
+
+[$gem install composite_primary_keys -v '5.0.6']
+そして、bundle install
+
+
+外部キーの追加
+http://codenote.net/ruby/rails/1094.html
+ 
+各マイグレーションファイルに、DB設計書に沿ったカラムを記述
+$rake db:migrate
+
+試しに rails s
+実際に利用してみる。
+
+エラー発生…
+index が表示され、レコードを加えるが、戻った後の表示にテーブルが存在していなかった。
+MySQL上に登録されていたため、URLで直接指定してやれば見ることができた。
+また、editを開いて値を更新してやると、MySQL上の値は更新されていた
+これで、"show""new""update"が確認できた
+ここで、"show"の画面に戻って削除のリンクを追加し、実際にリンクをクリックすると削除されていることも
+確認できた。
+これで"index"以外の機能を確認できたわけだが、ここで一旦indexに戻ってみると、レコードが表示されていた
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

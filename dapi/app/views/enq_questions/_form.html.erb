@@ -1,0 +1,37 @@
+<%= form_for(@enq_question) do |f| %>
+  <% if @enq_question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@enq_question.errors.count, "error") %> prohibited this enq_question from being saved:</h2>
+
+      <ul>
+      <% @enq_question.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :enq_id %><br />
+    <%= f.number_field :enq_id %>
+  </div>
+  <div class="field">
+    <%= f.label :num %><br />
+    <%= f.number_field :num %>
+  </div>
+  <div class="field">
+    <%= f.label :question_id %><br />
+    <%= f.number_field :question_id %>
+  </div>
+  <div class="field">
+    <%= f.label :update_name %><br />
+    <%= f.text_field :update_name %>
+  </div>
+  <div class="field">
+    <%= f.label :update_date %><br />
+    <%= f.date_select :update_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
