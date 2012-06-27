@@ -16,7 +16,6 @@ RewardApi::Application.routes.draw do
   scope "test/pkg" do
 	resources :csvs do
 	  get 'output', :on => :collection
-	  get 'export', :on => :collection
 	end
   end
 

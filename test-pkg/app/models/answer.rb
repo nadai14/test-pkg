@@ -4,4 +4,5 @@ class Answer < ActiveRecord::Base
   attr_accessible :answer, :enq_question_id, :user_agent, :campaign_id, :user_id, :updated_by, :updated_at
 
   belongs_to :enq_question
+  belongs_to :campaign
 end

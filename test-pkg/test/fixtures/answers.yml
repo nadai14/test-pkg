@@ -1,29 +1,45 @@
 # coding: utf-8
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  uuid: testid
-  campaign_id: test_enq_id
-  enq_question_id: MyString
-  user_id: MyString
-  user_agent: MyString
-  answer: MyText
+sc_sp_a1:
+  uuid: SPAnswerID1
+  campaign_id: CampaignSuccessConfirm
+  enq_question_id: SuccessConfirmSPQuestion1
+  user_id: User-ID-1
+  user_agent: iPhone
+  answer: 男性
+  updated_by: User-ID-1
+  updated_at: 2012.06.27 12:00:00
 
-two:
-  uuid: testid2
-  campaign_id: test_enq_id2
-  enq_question_id: MyString2
-  user_id: MyString2
-  user_agent: MyString2
-  answer: MyText2
+sc_sp_a2:
+  uuid: SPAnswerID2
+  campaign_id: CampaignSuccessConfirm
+  enq_question_id: SuccessConfirmSPQuestion2
+  user_id: User-ID-1
+  user_agent: iPhone
+  answer: 21
+  updated_by: User-ID-1
+  updated_at: 2012.06.27 12:00:00
 
-three:
-  uuid: testid3
-  campaign_id: test_enq_id3
-  enq_question_id: MyString3
-  user_id: MyString3
-  user_agent: MyString3
-  answer: MyText3
+sc_sp_a3:
+  uuid: SPAnswerID3
+  campaign_id: CampaignSuccessConfirm
+  enq_question_id: SuccessConfirmSPQuestion3
+  user_id: User-ID-1
+  user_agent: iPhone
+  answer: 選択肢2
+  updated_by: User-ID-1
+  updated_at: 2012.06.27 12:00:00
+
+sc_sp_a4-1:
+  uuid: SPAnswerID4-1
+  campaign_id: CampaignSuccessConfirm
+  enq_question_id: SuccessConfirmSPQuestion4-1
+  user_id: User-ID-1
+  user_agent: iPhone
+  answer: チェックボックス1
+  updated_by: User-ID-1
+  updated_at: 2012.06.27 12:00:00
 
 
 
