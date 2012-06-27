@@ -6,9 +6,6 @@ class CsvsController < ApplicationController
   def output
     require 'kconv'
     require 'csv'
-	require 'logger'
-
-	log = Logger.new(STDOUT)
 
 	columns = Campaign.
 	  includes([{:enq => [:enq_faces => [:enq_pages => [:enq_questions => [{:question => :choices}, :branches]]]]}, :answers]).
@@ -25,12 +22,26 @@ class CsvsController < ApplicationController
 
 	csv_data = CSV.generate("", {:encoding => 'sjis', :row_sep => "\r\n", :headers => header, :write_headers => true}) do |csv|
       column = []
-      column << columns[:mid]
-      column << columns[:enq_id]
-      column << columns.answers[0][:updated_at]
-      column << columns.answers[0][:user_id]
-      column << columns.answers[0][:user_agent]
-      csv << column
+	  tmp_name = ""
+	  tmp_agent = ""
+	  columns.answers.each do |ans|
+	    if tmp_name != ans[:user_name] or tmp_agent != ans[:user_agent]
+		  if tmp_name != ""
+		    csv << column
+		  end
+		  tmp_name = ans[:user_name]
+		  tmp_agent = ans[:user_agent]
+		  column = []
+          column << columns[:mid]
+          column << columns[:enq_id]
+          column << ans[:updated_at]
+          column << ans[:user_id]
+          column << ans[:user_agent]
+		end
+		
+		column << ans[:answer]
+	  end
+      csv << column 
     end
 
     csv_data = csv_data.tosjis
