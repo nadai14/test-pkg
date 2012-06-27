@@ -1,0 +1,306 @@
+# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# 動作確認データ
+radio:
+  uuid: QuestionRadio
+  kind: radio
+  title: 性別
+  content: 性別を選択してください
+  required: true
+
+numeric:
+  uuid: QuestionNumeric
+  kind: numeric
+  title: 年齢
+  content: 年齢を選択してください
+  required: true
+
+select:
+  uuid: QuestionSelect
+  kind: select
+  title: 選択問題
+  content: 選択肢から選択してください
+  required: true
+  answer_content: 選択肢2
+  answer_description: 選択肢問題の正解です
+
+prefectures:
+  uuid: QuestionPrefectures
+  kind: select
+  title: 都道府県
+  content: 出身地を選択してください
+  required: true
+  
+checkbox:
+  uuid: QuestionCheck
+  kind: checkbox
+  title: チェックボックス
+  content: チェックボックスから選択してください
+  required: false
+
+text:
+  uuid: QuestionText
+  kind: text
+  title: テキスト問題
+  content: テキスト問題です
+  required: false
+  answer_content: テキスト問題正解
+  answer_description: テキスト問題の正解です
+
+textarea:
+  uuid: QuestionTextarea
+  kind: textarea
+  title: テキストエリア
+  content: テキストエリアです
+  required: false
+
+# nil要素動作確認用
+nullable_q1:
+  uuid: NullableQuestion1
+  kind: text
+  answer_content: nil要素確認用
+ 
+nullable_q2:
+  uuid: NullableQuestion2
+  kind: text
+  required: false
+
+# 空回答確認用
+unrequired_numeric:
+  uuid: QuestionUnrequiredNumeric
+  kind: numeric
+  title: 年齢
+  content: 年齢を入力してください。
+  required: false
+
+unrequired_radio:
+  uuid: QuestionUnrequiredRadio
+  kind: radio
+  title: 性別
+  content: 性別を選択してください。
+  required: false
+
+unrequired_select:
+  uuid: QuestionUnrequiredSelect
+  kind: select
+  title: 選択
+  content: 選択肢から選択してください。
+  required: false
+
+unrequired_checkbox:
+  uuid: QuestionUnrequiredCheck
+  kind: checkbox
+  title: チェックボックス
+  content: チェックボックスから選択してください。
+  required: false
+
+# 異常系の確認用データ
+# 設問と選択肢が矛盾している
+incons_question:
+  uuid: QuestionInconsistency
+  kind: select
+  title: 設問と選択肢が矛盾している
+  content: 設問と選択肢が矛盾している
+  required: true
+  answer_content: 設問と選択肢が矛盾している
+  answer_description: 設問と選択肢が矛盾している
+
+
+# 養命酒
+yomei_shu_question1:
+  uuid: YomeiShuQuestion1
+  kind: radio
+  title: 性別をお答えください。
+  required: true
+
+yomei_shu_question2:
+  uuid: YomeiShuQuestion2
+  kind: radio
+  title: 年齢をお答えください。
+  required: true
+
+yomei_shu_question3:
+  uuid: YomeiShuQuestion3
+  kind: radio
+  title: このCMをご覧になって「ハーブの恵み」の香りに興味を持たれましたか？
+  required: true
+
+yomei_shu_question4:
+  uuid: YomeiShuQuestion4
+  kind: radio
+  title: このCMをご覧になって「ハーブの恵み」を飲んでみたいと思いましたか？
+  required: true
+
+yomei_shu_question5:
+  uuid: YomeiShuQuestion5
+  kind: radio
+  title: このCMをご覧になって「ハーブの恵み」を買ってみたいと思いましたか？
+  required: true
+
+yomei_shu_question6:
+  uuid: YomeiShuQuestion6
+  kind: radio
+  title: 「ハーブの恵み スパークリング」を以前からご存知でしたか？
+  required: true
+
+yomei_shu_question7:
+  uuid: YomeiShuQuestion7
+  kind: radio
+  title: 「ハーブの恵み スパークリング」を飲んだことがありますか？
+  required: true
+
+yomei_shu_question8:
+  uuid: YomeiShuQuestion8
+  kind: radio
+  title: 「ハーブの恵み」を以前からご存知でしたか？
+  required: true
+
+yomei_shu_question9:
+  uuid: YomeiShuQuestion9
+  kind: radio
+  title: 「ハーブの恵み」を飲んだことがありますか？
+  required: true
+
+yomei_shu_question10:
+  uuid: YomeiShuQuestion10
+  kind: radio
+  title: 最後に今回の動画を再生したきっかけを教えてください。
+  required: true
+
+# プラスワン
+plus_one_question1:
+  uuid: PlusOneQuestion1
+  kind: radio
+  title: 性別を教えてください。
+  required: true
+
+plus_one_question2:
+  uuid: PlusOneQuestion2
+  kind: radio
+  title: 年齢を教えてください。
+  required: true
+
+plus_one_question3:
+  uuid: PlusOneQuestion3
+  kind: radio
+  title: もしオリジナルTシャツを作成するとしたらどのような場面ですか？
+  required: true
+
+plus_one_question4:
+  uuid: PlusOneQuestion4
+  kind: radio
+  title: オリジナルTシャツの制作で重視するところはどこですか？
+  required: true
+
+plus_one_question5:
+  uuid: PlusOneQuestion5
+  kind: radio
+  title: 『プラスワン』の動画を見て良いと思ったところはどこですか？
+  required: true
+
+plus_one_question6:
+  uuid: PlusOneQuestion6
+  kind: radio
+  title: 【クイズ】動画の中で『プラスワン』の顧客満足度は何％でしたか？
+  required: true
+  answer_content: 92%
+
+plus_one_question7:
+  uuid: PlusOneQuestion7
+  kind: radio
+  title: 『プラスワン』というサービスを知っていましたか？
+  required: true
+
+plus_one_question8:
+  uuid: PlusOneQuestion8
+  kind: radio
+  title: 動画を見てサービスに興味を持ちましたか？
+  required: true
+
+plus_one_question9:
+  uuid: PlusOneQuestion9
+  kind: radio
+  title: 動画を見てサービスを利用したいと思いましたか？
+  required: true
+
+plus_one_question10:
+  uuid: PlusOneQuestion10
+  kind: radio
+  title: 今回なぜ動画を見ていただけましたか？
+  required: true
+
+# レッグマジックX
+legmagicX_question1:
+  uuid: LegMagicXQuestion1
+  kind: radio
+  title: 性別をお答え下さい。
+  required: true
+
+legmagicX_question2:
+  uuid: LegMagicXQuestion2
+  kind: radio
+  title: 年齢をお答え下さい。
+  required: true
+
+legmagicX_question3:
+  uuid: LegMagicXQuestion3
+  kind: radio
+  title: 最近ウエスト、脚、ヒップのサイズが気になったことはありますか？
+  required: true
+
+legmagicX_question4:
+  uuid: LegMagicXQuestion4
+  kind: radio
+  title: 1セットたった60秒の美脚マシン「レッグマジックX」をご存じでしたか？
+  required: true
+
+legmagicX_question5:
+  uuid: LegMagicXQuestion5
+  kind: radio
+  title: 日本人女性の25人の1人が持っている「レッグマジックX」であなたも理想の脚線美を手に入れたいですか？
+  required: true
+
+legmagicX_question6:
+  uuid: LegMagicXQuestion6
+  kind: radio
+  title: 「レッグマジックX」200万台突破記念キャンペーン、グリーコインプレゼントを申込みたいと思いますか。
+  required: true
+
+# 永谷園
+nagatani_en_question1:
+  uuid: NagataniEnQuestion1
+  kind: radio
+  title: 性別を教えてください。
+  required: true
+
+nagatani_en_question2:
+  uuid: NagataniEnQuestion2
+  kind: radio
+  title: 年齢を教えてください。
+  required: true
+
+nagatani_en_question3:
+  uuid: NagataniEnQuestion3
+  kind: radio
+  title: 朝、スッキリと起きられないことがありますか？
+  required: true
+
+nagatani_en_question4:
+  uuid: NagataniEnQuestion4
+  kind: radio
+  title: しじみの中に含まれるオルニチンの健康パワーをご存じでしたか？
+  required: true
+
+nagatani_en_question5:
+  uuid: NagataniEnQuestion5
+  kind: radio
+  title: 朝スッキリサプリ!!　オルニチンに興味がありますか？
+  required: true
+
+nagatani_en_question6:
+  uuid: NagataniEnQuestion6
+  kind: radio
+  title: 朝スッキリサプリ！！オルニチン　半額キャンペーン ＋ mixiポイントプレゼントに申し込みたいですか？
+  required: true
+

@@ -1,0 +1,301 @@
+﻿# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# スマートフォン用の動作確認データ
+sc_SP:
+  uuid: EnqSPSuccessConfirm
+  enq_id: EnqStatus1
+  face: SP
+  first_page_id: EnqSPSuccessConfirmPage1
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: アンケート1SP
+  description: アンケート1説明SP
+
+sc_SP_first:
+  uuid: EnqSPSuccessConfirmFirst
+  enq_id: EnqStatus1First
+  face: SP
+  first_page_id: EnqSPSuccessConfirmPage1First
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: アンケート1SP
+  description: アンケート1説明SP
+
+# PC用の動作確認データ
+sc_PC:
+  uuid: EnqPCSuccessConfirm
+  enq_id: EnqStatus1
+  face: PC
+  first_page_id: EnqPCSuccessConfirmPage1
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: アンケート1PC
+  description: アンケート1説明PC
+
+sc_PC_first:
+  uuid: EnqPCSuccessConfirmFirst
+  enq_id: EnqStatus1First
+  face: PC
+  first_page_id: EnqPCSuccessConfirmPage1First
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: アンケート1PC
+  description: アンケート1説明PC
+
+# スマートフォン用のnil動作確認データ
+nullable_SP:
+  uuid: EnqSPNullable
+  enq_id: EnqNullable
+  face: SP
+  
+nullable_SP_first_1:
+  uuid: EnqSPNullableFirst1
+  enq_id: EnqNullableFirst1
+  face: SP
+  first_page_id: EnqPageSPNullableFirst1Page1
+  
+nullable_SP_first_2:
+  uuid: EnqSPNullableFirst2
+  enq_id: EnqNullableFirst2
+  face: SP
+  first_page_id: EnqPageSPNullableFirst2Page
+  
+nullable_SP_first_3:
+  uuid: EnqSPNullableFirst3
+  enq_id: EnqNullableFirst3
+  face: SP
+  first_page_id: EnqPageSPNullableFirst3Page
+  
+# 空回答確認用
+null_answer_SP:
+  uuid: EnqSPNullAnswer
+  enq_id: EnqNullAnswer
+  face: SP
+  first_page_id: EnqSPNullAnswerPage1
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: 空回答確認用アンケート1SP
+  description: 空回答確認用アンケート1説明SP
+
+null_answer_PC:
+  uuid: EnqPCNullAnswer
+  enq_id: EnqNullAnswer
+  face: PC
+  first_page_id: EnqPCNullAnswerPage1
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: 空回答確認用アンケート1SP
+  description: 空回答確認用アンケート1説明SP
+
+# PC用のnil動作確認データ
+nullable_PC:
+  uuid: EnqPCNullable
+  enq_id: EnqNullable
+  face: PC
+
+nullable_PC_first_1:
+  uuid: EnqPCNullableFirst1
+  enq_id: EnqNullableFirst1
+  face: PC
+  first_page_id: EnqPagePCNullableFirst1Page1
+  
+nullable_PC_first_2:
+  uuid: EnqPCNullableFirst2
+  enq_id: EnqNullableFirst2
+  face: PC
+  first_page_id: EnqPagePCNullableFirst2Page
+  
+nullable_PC_first_3:
+  uuid: EnqPCNullableFirst3
+  enq_id: EnqNullableFirst3
+  face: PC
+  first_page_id: EnqPagePCNullableFirst3Page
+  
+# 異常系の確認用データ
+# アンケートの最初のページがNull
+first_page_null_SP:
+  uuid: FirstPageNullEnqFaceSPID
+  enq_id: FirstPageNullEnqID
+  face: SP
+  first_page_id: first_page_id
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: アンケートの最初のページがNull
+  description: アンケートの最初のページがNull
+
+first_page_id_null_SP:
+  uuid: FirstPageIDNullEnqFaceSPID
+  enq_id: FirstPageIDNullEnqID
+  face: SP
+  first_page_id: 
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: アンケートの最初のページがNull
+  description: アンケートの最初のページがNull
+
+first_page_null_PC:
+  uuid: FirstPageNullEnqFacePCID
+  enq_id: FirstPageNullEnqID
+  face: PC
+  first_page_id: first_page_id
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: アンケートの最初のページがNull
+  description: アンケートの最初のページがNull
+
+first_page_id_null_PC:
+  uuid: FirstPageIDNullEnqFacePCID
+  enq_id: FirstPageIDNullEnqID
+  face: PC
+  first_page_id: 
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: アンケートの最初のページがNull
+  description: アンケートの最初のページがNull
+
+# キャンペーンの状態が入稿前
+camp_status0_SP:
+  uuid: CampaignStatus0EnqFaceSPID
+  enq_id: CampaignStatus0EnqID
+  face: SP
+  first_page_id: CampaignStatus0EnqPageSPID
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: キャンペーンの状態が入稿前
+  description: キャンペーンの状態が入稿前
+
+camp_status0_PC:
+  uuid: CampaignStatus0EnqFacePCID
+  enq_id: CampaignStatus0EnqID
+  face: PC
+  first_page_id: CampaignStatus0EnqPagePCID
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: キャンペーンの状態が入稿前
+  description: キャンペーンの状態が入稿前
+
+# キャンペーンの状態が終了
+camp_closed_SP:
+  uuid: CampaignClosedEnqFaceSPID
+  enq_id: CampaignClosedEnqID
+  face: SP
+  first_page_id: CampaignClosedEnqPageSPID
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: キャンペーンの状態が入稿前
+  description: キャンペーンの状態が入稿前
+
+camp_closed_PC:
+  uuid: CampaignClosedEnqFacePCID
+  enq_id: CampaignClosedEnqID
+  face: PC
+  first_page_id: CampaignClosedEnqPagePCID
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: キャンペーンの状態が終了
+  description: キャンペーンの状態が終了
+
+# 設問と選択肢が矛盾している
+incons_question_SP:
+  uuid: InconsistencyQuestionEnqFaceSPID
+  enq_id: InconsistencyQuestionEnqID
+  face: SP
+  first_page_id: InconsistencyQuestionEnqPageSPID
+  wait_until: 30
+  css: /css/sp/themes/default-1/style.css
+  title: 設問と選択肢が矛盾している
+  description: 設問と選択肢が矛盾している
+
+incons_question_PC:
+  uuid: InconsistencyQuestionEnqFacePCID
+  enq_id: InconsistencyQuestionEnqID
+  face: PC
+  first_page_id: InconsistencyQuestionEnqPagePCID
+  wait_until: 30
+  css: /css/pc/themes/default-1/style.css
+  title: 設問と選択肢が矛盾している
+  description: 設問と選択肢が矛盾している
+
+
+# 養命酒
+yomei_shu_SP:
+  uuid: YomeiShuSPEnqFaceID
+  enq_id: YomeiShuEnqID
+  face: SP
+  first_page_id: YomeiShuSPEnqPage1
+  wait_until: 30
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+ 
+yomei_shu_PC:
+  uuid: YomeiShuPCEnqFaceID
+  enq_id: YomeiShuEnqID
+  face: PC
+  first_page_id: YomeiShuPCEnqPage1
+  wait_until: 30
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+
+# プラスワン
+plus_one_SP:
+  uuid: PlusOneSPEnqFaceID
+  enq_id: PlusOneEnqID
+  face: SP
+  first_page_id: PlusOneSPEnqPage1
+  wait_until: 
+  css: /css/sp/themes/plus1/style.css
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+ 
+plus_one_PC:
+  uuid: PlusOnePCEnqFaceID
+  enq_id: PlusOneEnqID
+  face: PC
+  first_page_id: PlusOnePCEnqPage1
+  wait_until: 
+  css: /css/pc/themes/plus1/style.css
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+
+# レッグマジックX
+legmagicX_SP:
+  uuid: LegMagicXSPEnqFaceID
+  enq_id: LegMagicXEnqID
+  face: SP
+  first_page_id: LegMagicXSPEnqPage1
+  wait_until: 
+  css: /css/sp/themes/lgmx/style.css
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+ 
+legmagicX_PC:
+  uuid: LegMagicXPCEnqFaceID
+  enq_id: LegMagicXEnqID
+  face: PC
+  first_page_id: LegMagicXPCEnqPage1
+  wait_until: 
+  css: /css/pc/themes/lgmx/style.css
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+
+# 永谷園
+nagatani_en_SP:
+  uuid: NagataniEnSPEnqFaceID
+  enq_id: NagataniEnEnqID
+  face: SP
+  first_page_id: NagataniEnSPEnqPage1
+  wait_until: 
+  css: /css/sp/themes/nagatanien/style.css
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント
+ 
+nagatani_en_PC:
+  uuid: NagataniEnPCEnqFaceID
+  enq_id: NagataniEnEnqID
+  face: PC
+  first_page_id: NagataniEnPCEnqPage1
+  wait_until: 
+  css: /css/pc/themes/nagatanien/style.css
+  title: 動画を見てアンケートに答えてプレゼントをもらおう
+  description: mixiポイントをプレゼント

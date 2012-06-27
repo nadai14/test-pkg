@@ -1,0 +1,267 @@
+﻿# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# 動作確認用データ
+success_confirm:
+  mid: CampaignSuccessConfirm
+  enq_id: EnqStatus1
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン1メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: 
+  second_point: 10
+  client_url: http://poncan.jp
+
+success_confirm_first:
+  mid: CampaignSuccessConfirmFirst
+  enq_id: EnqStatus1First
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン1メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner1
+  second_point: 10
+  client_url: http://poncan.jp
+
+# nil動作確認用のデータ
+nullable:
+  mid: CampaignNullable
+  enq_id: EnqNullable
+  status: 1
+  platform: gree
+  point: 40 
+  
+nullable_first_1:
+  mid: CampaignNullableFirst1
+  enq_id: EnqNullableFirst1
+  status: 1
+  platform: gree
+  point: 40 
+
+nullable_first_2:
+  mid: CampaignNullableFirst2
+  enq_id: EnqNullableFirst2
+  status: 1
+  platform: gree
+  point: 40 
+
+nullable_first_3:
+  mid: CampaignNullableFirst3
+  enq_id: EnqNullableFirst3
+  status: 1
+  platform: gree
+  point: 40 
+
+# 空回答確認用
+null_answer:
+  mid: CampaignNullAnswer
+  enq_id: EnqNullAnswer
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン1メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner1
+  second_point: 10
+  client_url: http://poncan.jp
+
+# 異常系の確認用データ
+# アンケートの最初のページがNull
+first_page_null:
+  mid: FirstPageNullCampaignID
+  enq_id: FirstPageNullEnqID
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーンメッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner1
+  second_point: 10
+  client_url: http://poncan.jp
+
+first_page_id_null:
+  mid: FirstPageIDNullCampaignID
+  enq_id: FirstPageIDNullEnqID
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーンメッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner1
+  second_point: 10
+  client_url: http://poncan.jp
+
+# キャンペーンの状態が入稿前
+camp_status0:
+  mid: CampaignStatus0CampaignID
+  enq_id: CampaignStatus0EnqID
+  status: 0
+  platform: gree
+  point: 20
+  opening_at: 2100-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン2メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner2
+  second_point: 20
+  client_url: http://poncan.jp
+
+# キャンペーンが終了
+# キャンペーンの状態が終了
+camp_status9:
+  mid: CampaignStatus9CampaignID
+  enq_id: CampaignClosedEnqID
+  status: 9
+  platform: mixi
+  point: 30
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2100-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン3メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner3
+  second_point: 30
+  client_url: http://poncan.jp
+
+# キャンペーンが終了日時を過ぎている
+camp_closed:
+  mid: CampaignClosedCampaignID
+  enq_id: CampaignClosedEnqID
+  status: 1
+  platform: gree
+  point: 40
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2012-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン4メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner4
+  second_point: 40
+  client_url: http://poncan.jp
+
+# 設問と選択肢が矛盾している
+incons_question:
+  mid: InconsistencyQuestionCampaignID
+  enq_id: InconsistencyQuestionEnqID
+  status: 1
+  platform: gree
+  point: 40
+  opening_at: 2000-1-1 0:0:0
+  closing_at: 2012-1-1 0:0:0
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /images/poster-pc.jpg
+  message: キャンペーン4メッセージ
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: banner4
+  second_point: 40
+  client_url: http://poncan.jp
+
+
+# 養命酒
+yomei_shu:
+  mid: YomeiShuCampaignID
+  enq_id: YomeiShuEnqID
+  status: 1
+  platform: mixi
+  point: 13
+  opening_at: 
+  closing_at: 
+  movie: /video/yomeishu/yomeishu.mp4
+  thumbnail: /images/poster-sp.jpg
+  message: ''
+  conversion_tag: <img src="../../images/conversion.jpg alt="サンプル">
+  second_picture: /images/creative-sp.jpg
+  banner_title: 
+  second_point: 
+  client_url: http://www.yomeishu.co.jp/megumi/kaorisu
+
+# プラスワン
+plus_one:
+  mid: PlusOneCampaignID
+  enq_id: PlusOneEnqID
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at:
+  closing_at:
+  movie: /video/plus1/plus1.mp4
+  thumbnail: /css/sp/themes/plus1/thumbnail.jpg
+  message: ''
+  conversion_tag: <img src="../../images/conversion-sp.jpg alt="サンプル">
+  second_picture: /css/sp/themes/plus1/2nd_banne.png
+  banner_title: 
+  second_point: 
+  client_url: http://www.p1-intl.com/
+
+# レッグマジックX
+legmagicX:
+  mid: LegMagicXCampaignID
+  enq_id: LegMagicXEnqID
+  status: 1
+  platform: gree
+  point: 10
+  opening_at:
+  closing_at:
+  movie: /video/lgmx/lgmx.flv
+  thumbnail: /css/sp/themes/lgmx/thumbnail.jpg
+  message: ''
+  conversion_tag: <img src="../../images/conversion-sp.jpg alt="サンプル">
+  second_picture: /css/sp/themes/lgmx/2nd_banne.png
+  banner_title: 
+  second_point: 
+  client_url: http://www.exabody.jp/smp-lp/lgmx/?af_id=262&s_ma=90WDRM01_md15_m1
+
+# 永谷園
+nagatani_en:
+  mid: NagataniEnCampaignID
+  enq_id: NagataniEnEnqID
+  status: 1
+  platform: mixi
+  point: 10
+  opening_at:
+  closing_at:
+  movie: /video/nagatanien/nagatanien.flv
+  thumbnail: /css/sp/themes/nagatanien/thumbnail.jpg
+  message: ''
+  conversion_tag: <img src="../../images/conversion-sp.jpg alt="サンプル">
+  second_picture: /css/sp/themes/nagatanien/2nd-banner.png
+  banner_title: 
+  second_point: 
+  client_url: http://poncan.jp
+

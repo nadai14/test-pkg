@@ -1,0 +1,673 @@
+# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# スマートフォン用の動作確認データ
+sc_SP_page1:
+  uuid: EnqSPSuccessConfirmPage1
+  enq_face_id: EnqSPSuccessConfirm
+  description: アンケ1SPページ1
+  next_page_id: EnqSPSuccessConfirmPage2
+  wait_until: 1
+
+sc_SP_page2:
+  uuid: EnqSPSuccessConfirmPage2
+  enq_face_id: EnqSPSuccessConfirm
+  description: アンケ1SPページ2
+  next_page_id: EnqSPSuccessConfirmPage3-1
+  wait_until: 1
+
+sc_SP_page3_1:
+  uuid: EnqSPSuccessConfirmPage3-1
+  enq_face_id: EnqSPSuccessConfirm
+  description: アンケ1SPページ3
+  next_page_id: 
+  wait_until: 1
+
+sc_SP_page3_2:
+  uuid: EnqSPSuccessConfirmPage3-2
+  enq_face_id: EnqSPSuccessConfirm
+  description: アンケ1SPページ3
+  next_page_id: 
+  wait_until: 1
+  
+sc_SP_page1_first:
+  uuid: EnqSPSuccessConfirmPage1First
+  enq_face_id: EnqSPSuccessConfirmFirst
+  description: アンケ1SPページ1First
+  next_page_id: EnqSPSuccessConfirmPage2-1First
+  wait_until: 1
+
+sc_SP_page2_1_first:
+  uuid: EnqSPSuccessConfirmPage2-1First
+  enq_face_id: EnqSPSuccessConfirmFirst
+  description: アンケ1SPページ2-1First
+  next_page_id: 
+  wait_until: 1
+
+sc_SP_page2_2_first:
+  uuid: EnqSPSuccessConfirmPage2-2First
+  enq_face_id: EnqSPSuccessConfirmFirst
+  description: アンケ1SPページ2-2First
+  next_page_id: 
+  wait_until: 1
+
+# PC用の動作確認データ
+sc_PC_page1:
+  uuid: EnqPCSuccessConfirmPage1
+  enq_face_id: EnqPCSuccessConfirm
+  description: アンケ1PCページ1
+  next_page_id: EnqPCSuccessConfirmPage2
+  wait_until: 1
+
+sc_PC_page2:
+  uuid: EnqPCSuccessConfirmPage2
+  enq_face_id: EnqPCSuccessConfirm
+  description: アンケ1PCページ2
+  next_page_id: EnqPCSuccessConfirmPage3-1
+  wait_until: 1
+
+sc_PC_page3_1:
+  uuid: EnqPCSuccessConfirmPage3-1
+  enq_face_id: EnqPCSuccessConfirm
+  description: アンケ1PCページ3-1
+  next_page_id: 
+  wait_until: 1
+
+sc_PC_page3_2:
+  uuid: EnqPCSuccessConfirmPage3-2
+  enq_face_id: EnqPCSuccessConfirm
+  description: アンケ1PCページ3-2
+  next_page_id: 
+  wait_until: 1
+
+sc_PC_page1_first:
+  uuid: EnqPCSuccessConfirmPage1First
+  enq_face_id: EnqPCSuccessConfirmFirst
+  description: アンケ1PCページ1First
+  next_page_id: EnqPCSuccessConfirmPage2-1First
+  wait_until: 1
+
+sc_PC_page2_1_first:
+  uuid: EnqPCSuccessConfirmPage2-1First
+  enq_face_id: EnqPCSuccessConfirmFirst
+  description: アンケ1PCページ2-1First
+  next_page_id: 
+  wait_until: 1
+
+sc_PC_page2_2_first:
+  uuid: EnqPCSuccessConfirmPage2-2First
+  enq_face_id: EnqPCSuccessConfirmFirst
+  description: アンケ1PCページ2-2First
+  next_page_id: 
+  wait_until: 1
+
+# スマートフォン用のnil動作確認データ
+nullable_SP_page1:
+  uuid: EnqPageSPNullablePage1
+  enq_face_id: EnqSPNullable
+  next_page_id: EnqPageSPNullablePage2-1
+
+nullable_SP_page2_1:
+  uuid: EnqPageSPNullablePage2-1
+  enq_face_id: EnqSPNullable
+
+nullable_SP_page2_2:
+  uuid: EnqPageSPNullablePage2-2
+  enq_face_id: EnqSPNullable
+
+nullable_SP_first_1_page1:
+  uuid: EnqPageSPNullableFirst1Page1
+  enq_face_id: EnqSPNullableFirst1
+  next_page_id: EnqPageSPNullablePage2-1
+
+nullable_SP_first_1_page2_1:
+  uuid: EnqPageSPNullableFirst1Page2-1
+  enq_face_id: EnqSPNullableFirst1
+
+nullable_SP_first_1_page2_2:
+  uuid: EnqPageSPNullableFirst1Page2-2
+  enq_face_id: EnqSPNullable
+
+nullable_SP_first_2_page:
+  uuid: EnqPageSPNullableFirst2Page
+  enq_face_id: EnqSPNullableFirst2
+
+nullable_SP_first_3_page:
+  uuid: EnqPageSPNullableFirst3Page
+  enq_face_id: EnqSPNullableFirst3
+
+# PC用のnil動作確認データ
+nullable_PC_page1:
+  uuid: EnqPagePCNullablePage1
+  enq_face_id: EnqPCNullable
+  next_page_id: EnqPagePCNullablePage2-1
+
+nullable_PC_page2_1:
+  uuid: EnqPagePCNullablePage2-1
+  enq_face_id: EnqPCNullable
+
+nullable_PC_page2_2:
+  uuid: EnqPagePCNullablePage2-2
+  enq_face_id: EnqPCNullable
+  
+nullable_PC_first_1_page1:
+  uuid: EnqPagePCNullableFirst1Page1
+  enq_face_id: EnqPCNullableFirst1
+  next_page_id: EnqPagePCNullablePage2-1
+
+nullable_PC_first_1_page2_1:
+  uuid: EnqPagePCNullableFirst1Page2-1
+  enq_face_id: EnqPCNullableFirst1
+
+nullable_PC_first_1_page2_2:
+  uuid: EnqPagePCNullableFirst1Page2-2
+  enq_face_id: EnqPCNullable
+
+nullable_PC_first_2_page:
+  uuid: EnqPagePCNullableFirst2Page
+  enq_face_id: EnqPCNullableFirst2
+
+nullable_PC_first_3_page:
+  uuid: EnqPagePCNullableFirst3Page
+  enq_face_id: EnqPCNullableFirst3
+
+# 空回答確認用
+null_answer_SP_page1:
+  uuid: EnqSPNullAnswerPage1
+  enq_face_id: EnqSPNullAnswer
+  description: 空回答確認用アンケSPページ1
+  next_page_id: EnqSPNullAnswerPage2
+  wait_until: 1
+
+null_answer_SP_page2:
+  uuid: EnqSPNullAnswerPage2
+  enq_face_id: EnqSPNullAnswer
+  description: 空回答確認用アンケSPページ2
+  next_page_id: EnqSPNullAnswerPage3
+  wait_until: 1
+
+null_answer_SP_page3:
+  uuid: EnqSPNullAnswerPage3
+  enq_face_id: EnqSPNullAnswer
+  description: 空回答確認用アンケSPページ3
+  next_page_id: EnqSPNullAnswerPage4
+  wait_until: 1
+
+null_answer_SP_page4:
+  uuid: EnqSPNullAnswerPage4
+  enq_face_id: EnqSPNullAnswer
+  description: 空回答確認用アンケSPページ4
+  wait_until: 1
+
+null_answer_PC_page1:
+  uuid: EnqPCNullAnswerPage1
+  enq_face_id: EnqPCNullAnswer
+  description: 空回答確認用アンケPCページ1
+  next_page_id: EnqPCNullAnswerPage2
+  wait_until: 1
+
+null_answer_PC_page2:
+  uuid: EnqPCNullAnswerPage2
+  enq_face_id: EnqPCNullAnswer
+  description: 空回答確認用アンケPCページ2
+  next_page_id: EnqPCNullAnswerPage3
+  wait_until: 1
+
+null_answer_PC_page3:
+  uuid: EnqPCNullAnswerPage3
+  enq_face_id: EnqPCNullAnswer
+  description: 空回答確認用アンケPCページ3
+  next_page_id: EnqPCNullAnswerPage4
+  wait_until: 1
+
+null_answer_PC_page4:
+  uuid: EnqPCNullAnswerPage4
+  enq_face_id: EnqPCNullAnswer
+  description: 空回答確認用アンケPCページ4
+  wait_until: 1
+
+# 異常系の確認用データ
+# アンケートの最初のページがNull
+first_page_null_SP:
+  uuid: FirstPageNullEnqPageSPID
+  enq_face_id: FirstPageNullEnqFaceSPID
+  description: アンケートの最初のページがNull
+  next_page_id: 
+  wait_until: 1
+
+first_page_null_PC:
+  uuid: FirstPageNullEnqPagePCID
+  enq_face_id: FirstPageNullEnqFacePCID
+  description: アンケートの最初のページがNull
+  next_page_id: 
+  wait_until: 1
+
+# キャンペーンの状態が入稿前
+camp_status0_SP:
+  uuid: CampaignStatus0EnqPageSPID
+  enq_face_id: CampaignStatus0EnqFaceSPID
+  description: キャンペーンの状態が入稿前
+  next_page_id: 
+  wait_until: 1
+
+camp_status0_PC:
+  uuid: CampaignStatus0EnqPagePCID
+  enq_face_id: CampaignStatus0EnqFacePCID
+  description: キャンペーンの状態が入稿前
+  next_page_id: 
+  wait_until: 1
+
+# キャンペーンの状態が終了
+camp_closed_SP:
+  uuid: CampaignClosedEnqPageSPID
+  enq_face_id: CampaignClosedEnqFaceSPID
+  description: キャンペーンの状態が終了
+  next_page_id: 
+  wait_until: 1
+
+camp_closed_PC:
+  uuid: CampaignClosedEnqPagePCID
+  enq_face_id: CampaignClosedEnqFacePCID
+  description: キャンペーンの状態が終了
+  next_page_id: 
+  wait_until: 1
+
+# 設問と選択肢が矛盾している
+incons_question_SP:
+  uuid: InconsistencyQuestionEnqPageSPID
+  enq_face_id: InconsistencyQuestionEnqFaceSPID
+  description: 設問と選択肢が矛盾している
+  next_page_id: 
+  wait_until: 1
+
+incons_question_PC:
+  uuid: InconsistencyQuestionEnqPagePCID
+  enq_face_id: InconsistencyQuestionEnqFacePCID
+  description: 設問と選択肢が矛盾している
+  next_page_id: 
+  wait_until: 1
+
+
+# 養命酒
+yomei_shu_sp_page1:
+  uuid: YomeiShuSPEnqPage1
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage2
+
+yomei_shu_sp_page2:
+  uuid: YomeiShuSPEnqPage2
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage3
+
+yomei_shu_sp_page3:
+  uuid: YomeiShuSPEnqPage3
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage4
+
+yomei_shu_sp_page4:
+  uuid: YomeiShuSPEnqPage4
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage5
+
+yomei_shu_sp_page5:
+  uuid: YomeiShuSPEnqPage5
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage6
+
+yomei_shu_sp_page6:
+  uuid: YomeiShuSPEnqPage6
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage7
+
+yomei_shu_sp_page7:
+  uuid: YomeiShuSPEnqPage7
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage8
+
+yomei_shu_sp_page8:
+  uuid: YomeiShuSPEnqPage8
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage9
+
+yomei_shu_sp_page9:
+  uuid: YomeiShuSPEnqPage9
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+  next_page_id: YomeiShuSPEnqPage10
+
+yomei_shu_sp_page10:
+  uuid: YomeiShuSPEnqPage10
+  enq_face_id: YomeiShuSPEnqFaceID
+  description: 
+
+yomei_shu_pc_page1:
+  uuid: YomeiShuPCEnqPage1
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage2
+
+yomei_shu_pc_page2:
+  uuid: YomeiShuPCEnqPage2
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage3
+
+yomei_shu_pc_page3:
+  uuid: YomeiShuPCEnqPage3
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage4
+
+yomei_shu_pc_page4:
+  uuid: YomeiShuPCEnqPage4
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage5
+
+yomei_shu_pc_page5:
+  uuid: YomeiShuPCEnqPage5
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage6
+
+yomei_shu_pc_page6:
+  uuid: YomeiShuPCEnqPage6
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage7
+
+yomei_shu_pc_page7:
+  uuid: YomeiShuPCEnqPage7
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage8
+
+yomei_shu_pc_page8:
+  uuid: YomeiShuPCEnqPage8
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage9
+
+yomei_shu_pc_page9:
+  uuid: YomeiShuPCEnqPage9
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+  next_page_id: YomeiShuPCEnqPage10
+
+yomei_shu_pc_page10:
+  uuid: YomeiShuPCEnqPage10
+  enq_face_id: YomeiShuPCEnqFaceID
+  description: 
+
+# プラスワン
+plus_one_sp_page1:
+  uuid: PlusOneSPEnqPage1
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage2
+
+plus_one_sp_page2:
+  uuid: PlusOneSPEnqPage2
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage3
+
+plus_one_sp_page3:
+  uuid: PlusOneSPEnqPage3
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage4
+
+plus_one_sp_page4:
+  uuid: PlusOneSPEnqPage4
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage5
+
+plus_one_sp_page5:
+  uuid: PlusOneSPEnqPage5
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage6
+
+plus_one_sp_page6:
+  uuid: PlusOneSPEnqPage6
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage7
+
+plus_one_sp_page7:
+  uuid: PlusOneSPEnqPage7
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage8
+
+plus_one_sp_page8:
+  uuid: PlusOneSPEnqPage8
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage9
+
+plus_one_sp_page9:
+  uuid: PlusOneSPEnqPage9
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+  next_page_id: PlusOneSPEnqPage10
+
+plus_one_sp_page10:
+  uuid: PlusOneSPEnqPage10
+  enq_face_id: PlusOneSPEnqFaceID
+  description: 
+
+plus_one_pc_page1:
+  uuid: PlusOnePCEnqPage1
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage2
+
+plus_one_pc_page2:
+  uuid: PlusOnePCEnqPage2
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage3
+
+plus_one_pc_page3:
+  uuid: PlusOnePCEnqPage3
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage4
+
+plus_one_pc_page4:
+  uuid: PlusOnePCEnqPage4
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage5
+
+plus_one_pc_page5:
+  uuid: PlusOnePCEnqPage5
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage6
+
+plus_one_pc_page6:
+  uuid: PlusOnePCEnqPage6
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage7
+
+plus_one_pc_page7:
+  uuid: PlusOnePCEnqPage7
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage8
+
+plus_one_pc_page8:
+  uuid: PlusOnePCEnqPage8
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage9
+
+plus_one_pc_page9:
+  uuid: PlusOnePCEnqPage9
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+  next_page_id: PlusOnePCEnqPage10
+
+plus_one_pc_page10:
+  uuid: PlusOnePCEnqPage10
+  enq_face_id: PlusOnePCEnqFaceID
+  description: 
+
+# レッグマジックX
+legmagicX_sp_page1:
+  uuid: LegMagicXSPEnqPage1
+  enq_face_id: LegMagicXSPEnqFaceID
+  description: 
+  next_page_id: LegMagicXSPEnqPage2
+
+legmagicX_sp_page2:
+  uuid: LegMagicXSPEnqPage2
+  enq_face_id: LegMagicXSPEnqFaceID
+  description: 
+  next_page_id: LegMagicXSPEnqPage3
+
+legmagicX_sp_page3:
+  uuid: LegMagicXSPEnqPage3
+  enq_face_id: LegMagicXSPEnqFaceID
+  description: 
+  next_page_id: LegMagicXSPEnqPage4
+
+legmagicX_sp_page4:
+  uuid: LegMagicXSPEnqPage4
+  enq_face_id: LegMagicXSPEnqFaceID
+  description: 
+  next_page_id: LegMagicXSPEnqPage5
+
+legmagicX_sp_page5:
+  uuid: LegMagicXSPEnqPage5
+  enq_face_id: LegMagicXSPEnqFaceID
+  description: 
+  next_page_id: LegMagicXSPEnqPage6
+
+legmagicX_sp_page6:
+  uuid: LegMagicXSPEnqPage6
+  enq_face_id: LegMagicXSPEnqFaceID
+  description: 
+  next_page_id:
+
+legmagicX_pc_page1:
+  uuid: LegMagicXPCEnqPage1
+  enq_face_id: LegMagicXPCEnqFaceID
+  description: 
+  next_page_id: LegMagicXPCEnqPage2
+
+legmagicX_pc_page2:
+  uuid: LegMagicXPCEnqPage2
+  enq_face_id: LegMagicXPCEnqFaceID
+  description: 
+  next_page_id: LegMagicXPCEnqPage3
+
+legmagicX_pc_page3:
+  uuid: LegMagicXPCEnqPage3
+  enq_face_id: LegMagicXPCEnqFaceID
+  description: 
+  next_page_id: LegMagicXPCEnqPage4
+
+legmagicX_pc_page4:
+  uuid: LegMagicXPCEnqPage4
+  enq_face_id: LegMagicXPCEnqFaceID
+  description: 
+  next_page_id: LegMagicXPCEnqPage5
+
+legmagicX_pc_page5:
+  uuid: LegMagicXPCEnqPage5
+  enq_face_id: LegMagicXPCEnqFaceID
+  description: 
+  next_page_id: LegMagicXPCEnqPage6
+
+legmagicX_pc_page6:
+  uuid: LegMagicXPCEnqPage6
+  enq_face_id: LegMagicXPCEnqFaceID
+  description: 
+  next_page_id:
+
+# レッグマジックX
+nagatani_en_sp_page1:
+  uuid: NagataniEnSPEnqPage1
+  enq_face_id: NagataniEnSPEnqFaceID
+  description: 
+  next_page_id: NagataniEnSPEnqPage2
+
+nagatani_en_sp_page2:
+  uuid: NagataniEnSPEnqPage2
+  enq_face_id: NagataniEnSPEnqFaceID
+  description: 
+  next_page_id: NagataniEnSPEnqPage3
+
+nagatani_en_sp_page3:
+  uuid: NagataniEnSPEnqPage3
+  enq_face_id: NagataniEnSPEnqFaceID
+  description: 
+  next_page_id: NagataniEnSPEnqPage4
+
+nagatani_en_sp_page4:
+  uuid: NagataniEnSPEnqPage4
+  enq_face_id: NagataniEnSPEnqFaceID
+  description: 
+  next_page_id: NagataniEnSPEnqPage5
+
+nagatani_en_sp_page5:
+  uuid: NagataniEnSPEnqPage5
+  enq_face_id: NagataniEnSPEnqFaceID
+  description: 
+  next_page_id: NagataniEnSPEnqPage6
+
+nagatani_en_sp_page6:
+  uuid: NagataniEnSPEnqPage6
+  enq_face_id: NagataniEnSPEnqFaceID
+  description: 
+  next_page_id:
+
+nagatani_en_pc_page1:
+  uuid: NagataniEnPCEnqPage1
+  enq_face_id: NagataniEnPCEnqFaceID
+  description: 
+  next_page_id: NagataniEnPCEnqPage2
+
+nagatani_en_pc_page2:
+  uuid: NagataniEnPCEnqPage2
+  enq_face_id: NagataniEnPCEnqFaceID
+  description: 
+  next_page_id: NagataniEnPCEnqPage3
+
+nagatani_en_pc_page3:
+  uuid: NagataniEnPCEnqPage3
+  enq_face_id: NagataniEnPCEnqFaceID
+  description: 
+  next_page_id: NagataniEnPCEnqPage4
+
+nagatani_en_pc_page4:
+  uuid: NagataniEnPCEnqPage4
+  enq_face_id: NagataniEnPCEnqFaceID
+  description: 
+  next_page_id: NagataniEnPCEnqPage5
+
+nagatani_en_pc_page5:
+  uuid: NagataniEnPCEnqPage5
+  enq_face_id: NagataniEnPCEnqFaceID
+  description: 
+  next_page_id: NagataniEnPCEnqPage6
+
+nagatani_en_pc_page6:
+  uuid: NagataniEnPCEnqPage6
+  enq_face_id: NagataniEnPCEnqFaceID
+  description: 
+  next_page_id:

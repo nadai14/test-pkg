@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+	<head>
+	  <meta charset="utf-8">
+	</head>
+	<body>
+		お待ちください...
+		<!-- load scripts  -->
+		<!-- User agent detection -->
+		<script src="js/ua.js"></script>
+		
+		<!-- jQuery, Backbone, underscore -->
+		<script>
+			(function(){
+				var _parameter = (-1 < window.location.href.indexOf('?')) ? window.location.href.substr(window.location.href.indexOf('?')) : '';
+				location.href = 
+					((ua.OS === "iPhone/iPod" || ua.OS === "Android") ? 'sp.html' : 'pc.html') + _parameter;
+			})();
+		</script>
+	  
+	</body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+	<head>
+	  <meta charset="utf-8">
+	  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	       More info: h5bp.com/i/378 -->
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <title></title>
+	  <meta name="description" content="">
+	  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  <meta name="viewport" content="width=device-width">
+	  <link rel="stylesheet" href="css/pc/base.css">
+	  <!-- <link rel="stylesheet" href="js/libs/video-js/video-js.min.css" > -->
+	  <link rel="stylesheet" href="js/libs/mediaelement/mediaelementplayer.min.css" />
+	  <link rel="stylesheet" href="css/pc/style.css">
+	  <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+	</head>
+	<body>
+	  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+	       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+		
+		<!-- mr container -->
+		<div id="mr-canvas" class="mr-ui-canvas">
+			<header class="mr-ui-header"><!-- {{header}} --></header>
+			<div class="mr-ui-body" role="main">
+				
+				<!-- content area -->
+				<div class="mr-ui-content">
+					
+					<!-- landing page : template for mr.ui.Landing.js -->
+					<div class="mr-ui-landing mr-ui-content-block mr-ui-template">
+						<div class="mr-ui-title">
+							<b class="clear-type">{{title}}</b>
+						</div>
+						<div class="mr-ui-description">
+							<p class="clear-type">{{description}}</p>
+						</div>
+					</div>
+					
+					<!-- Campaign page : template for mr.ui.Page.js -->
+					<div class="mr-ui-page mr-ui-content-block mr-ui-template">
+						<div class="mr-ui-title">
+							<b class="clear-type">{{title}}</b>
+						</div>
+						<div class="mr-ui-questions">
+							<div class="mr-ui-question mr-ui-template">
+								<div class="mr-ui-title">
+									<b class="clear-type">{{title}}</b>
+									<span class="clear-type mr-ui-required"></span>
+								</div>
+								<div class="mr-ui-description">
+									<p class="clear-type">{{description}}</p>
+								</div>
+								<div class="mr-ui-answer mr-ui-result-hide">
+									
+								</div>
+							</div>
+						</div>
+						<button type="button" class="mr-ui-next mr-ui-button clear-type">
+							
+						</button>
+					</div>
+					
+					<!-- already page : template for mr.ui.Already.js -->
+					<div class="mr-ui-complete mr-ui-content-block mr-ui-template">
+						<div class="mr-ui-title">
+							<b class="clear-type">{{title}}</b>
+						</div>
+						<button type="button" class="mr-ui-next mr-ui-button clear-type">
+							{{message}}
+						</button>
+					</div>
+					
+					<div class="mr-ui-thankyou mr-ui-content-block mr-ui-template">
+						<div class="mr-ui-title">
+							<b class="clear-type">{{title}}</b>
+						</div>
+						<div class="mr-ui-description">
+							<p class="clear-type">{{description}}</p>
+						</div>
+						<div class="mr-ui-message">
+							{{social}}
+						</div>
+						<div class="mr-ui-client">
+							<button type="button" class="mr-ui-next mr-ui-button clear-type">
+								<a target="_blank" href="{{client_url}}">クライアントサイトへ移動する</a>
+							</button>
+						</div>
+					</div>
+					
+					<!-- already page : template for mr.ui.Already.js -->
+					<div class="mr-ui-already mr-ui-content-block mr-ui-template">
+						<div class="mr-ui-title">
+							<b class="clear-type">{{title}}</b>
+						</div>
+						<div class="mr-ui-message">
+							{{social}}
+						</div>
+						<div class="mr-ui-client">
+							<button type="button" class="mr-ui-next mr-ui-button clear-type">
+								<a target="_blank" href="{{client_url}}">クライアントサイトへ移動する</a>
+							</button>
+						</div>
+					</div>
+					
+					<!-- already page : template for mr.ui.Already.js -->
+					<div class="mr-ui-sorry mr-ui-content-block mr-ui-template">
+						<div class="mr-ui-title">
+							<b class="clear-type">{{title}}</b>
+						</div>
+						<div class="mr-ui-description">
+							{{description}}
+						</div>
+						<button type="button" class="mr-ui-button clear-type">
+							<a href="{{back}}" class="clear-type">最初に戻る</a>
+						</button>
+					</div>
+					
+					<!-- for conversion -->
+					<div class="mr-ui-conversion">
+					</div>
+			
+				</div>
+				
+				<!-- ad area -->
+				<div class="mr-ui-ad">
+					<video class="mr-ui-player" width="528" height="297" ></video>
+					<div class="mr-ui-creative mr-ui-template">{{creative}}</div>
+				</div>
+				
+				<!-- nav area -->
+				<div class="mr-ui-nav mr-ui-template">
+					<p class="clear-type">{{html}}</p>
+				</div>
+				
+			</div>
+			<footer class="mr-ui-footer mr-ui-template">
+				<p class="clear-type">{{footer}}</p>
+			</footer>
+			
+			<!-- for conversion -->
+			<div class="mr-ui-conversion">
+			</div>
+			
+		</div>
+		
+		<!-- load scripts  -->
+		<!-- User agent detection -->
+		<script src="js/ua.js"></script>
+		
+		<!-- jQuery, Backbone, underscore -->
+		<script src="js/libs/jquery-1.7.2.min.js"></script>
+		<script src="js/libs/underscore-1.3.3.js"></script>
+		<script src="js/libs/backbone-0.9.2.js"></script>
+		
+		<script src="js/libs/swfobject.js"></script>
+		
+		<!-- Video.js for mr.ui.VideoPlayer --> 
+		<!-- <script src="js/libs/video-js/video.js"></script> -->
+		<script src="js/libs/mediaelement/mediaelement-and-player.min.js"></script>
+		
+		<!-- cript lib -->
+		<script src="js/libs/sjcl.js"></script>
+		
+		<!-- URI.js -->
+		<script src="js/libs/URI.js"></script>
+		
+		<!-- MovieReward Scripts -->
+		<script src="js/mr.js?v=201206212305"></script>
+		
+		<script src="js/mr/model/Base.js?v=20120620"></script>
+		<script src="js/mr/model/v1/Base.js?v=20120620"></script>
+		<script src="js/mr/model/v1/Campaign.js?v=201206220847"></script>
+		<script src="js/mr/model/v1/Page.js?v=20120620"></script>
+		<script src="js/mr/model/v1/Question.js?v=20120620"></script>
+		<script src="js/mr/model/v1/Questions.js?v=20120620"></script>
+		<script src="js/mr/model/v1/Answer.js?v=20120620"></script>
+		<script src="js/mr/model/Parameter.js?v=20120620"></script>
+		<script src="js/mr/model/Campaign.js?v=20120620"></script>
+		<script src="js/mr/model/Page.js?v=20120620"></script>
+		<script src="js/mr/model/Question.js?v=20120620"></script>
+		<script src="js/mr/model/Questions.js?v=20120620"></script>
+		<script src="js/mr/model/Answer.js?v=20120620"></script>
+				
+		<script src="js/mr/ui/Base.js?v=20120620"></script>
+		<script src="js/mr/ui/Creative.js?v=20120620"></script>
+		<script src="js/mr/ui/PlayerME.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Nav.js?v=20120620"></script>
+		<script src="js/mr/ui/Nav.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Ad.js?v=20120620"></script>
+		<script src="js/mr/ui/Ad.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Landing.js?v=20120620"></script>
+		<script src="js/mr/ui/Landing.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Next.js?v=20120620"></script>
+		<script src="js/mr/ui/Next.js?v=20120620"></script>
+		<script src="js/mr/ui/Question.js?v=20120620"></script>
+		<script src="js/mr/ui/Questions.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Already.js?v=20120621"></script>
+		<script src="js/mr/ui/Already.js?v=20120620"></script>
+		<script src="js/mr/ui/Page.js?v=20120614"></script>
+		<script src="js/mr/ui/model/Complete.js?v=20120620"></script>
+		<script src="js/mr/ui/Complete.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Thankyou.js?v=20120620"></script>
+		<script src="js/mr/ui/Thankyou.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Sorry.js?v=20120620"></script>
+		<script src="js/mr/ui/Sorry.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Content.js?v=20120620"></script>
+		<script src="js/mr/ui/Content.js?v=20120614"></script>
+		<script src="js/mr/ui/Body.js?v=20120620"></script>
+		<script src="js/mr/ui/Footer.js?v=20120620"></script>
+		<script src="js/mr/ui/Header.js?v=20120620"></script>
+		<script src="js/mr/ui/model/Theme.js?v=20120620"></script>
+		<script src="js/mr/ui/Theme.js?v=20120620"></script>
+		<script src="js/mr/ui/Conversion.js?v=20120620"></script>
+		<script src="js/mr/ui/Canvas.js?v=20120620"></script>
+
+		<script src="js/mr/controller/Controller.js?v=20120620"></script>
+		
+		<script>
+			$(document).ready(function(){
+				mr.initialize({
+					// api: '../api/v1',                                         // relative
+					// api: 'http://192.168.1.115/nci-201205/api/v1',            // dev(tsuru local)
+					// api: 'http://demo.sunbi.co.jp/nci-201205/trunk/api/v1',   // dev(sunbi)
+					// api: 'http://moviereward.nadai.jp:3000/api/v1',           // prod
+					// api: 'http://moviereward.nadai.jp:3001/api/v1',              // STABLE
+					api: 'http://moviereward.nadai.jp:3002/api/v1',              // dev
+					el:  'mr-canvas'
+				});
+  		});
+		</script>
+	  
+	</body>
+</html>

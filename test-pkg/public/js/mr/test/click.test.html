@@ -1,0 +1,18 @@
+<html>
+	<script>
+		function test() {
+			var elm = document.getElementById('test');
+			elm.onclick  = function(){
+				alert('clicked a');
+				window.open('http://www.sunbi.co.jp', '');
+				return false;
+			}
+			var evt = document.createEvent("MouseEvents");
+			evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, elm);
+			elm.dispatchEvent(evt);
+		}
+	</script>
+	<body >
+		<a href="http://www.sunbi.co.jp" id="test" onclick="alert('A');" target="_blank">test</a>
+	</body>
+</html>

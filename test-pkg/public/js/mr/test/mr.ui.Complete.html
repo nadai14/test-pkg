@@ -1,0 +1,98 @@
+<!doctype html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>NCI-201205 Test Suite</title>
+		<link rel="stylesheet" href="qunit/qunit.css">
+		<script src="qunit/qunit.js"></script>
+		
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+		
+		<!-- User agent detection -->
+		<script src="../../ua.js"></script>
+		
+		<!-- jQuery, Backbone, underscore -->
+		<script>
+			(function(){
+				(ua.OS === "iPhone/iPod" || ua.OS === "Android") ?
+					document.write('<script src="../../libs/zepto-1.0-rc1.min.js"><\/script>') :
+			 		document.write('<script src="../../libs/jquery-1.7.2.min.js"><\/script>');
+			})();
+		</script>
+		<script src="../../libs/underscore-1.3.3.js"></script>
+		<script src="../../libs/backbone-0.9.2.js"></script>
+		
+		<!-- Video.js for mr.ui.VideoPlayer --> 
+		<!-- <script src="js/libs/video-js/video.js"></script> -->
+		<script src="../../libs/mediaelement/mediaelement-and-player.min.js"></script>
+		
+		<!-- cript lib -->
+		<script src="../../libs/sjcl.js"></script>
+		
+		<!-- URI.js -->
+		<script src="../../libs/URI.js"></script>
+		
+		<!-- MovieReward Scripts -->
+		<script src="../../mr.js?v=20120620"></script>
+		
+		<script src="../model/Base.js?v=20120620"></script>
+		<script src="../model/v1/Base.js?v=20120620"></script>
+		<script src="../model/v1/Campaign.js?v=20120620"></script>
+		<script src="../model/v1/Page.js?v=20120620"></script>
+		<script src="../model/v1/Question.js?v=20120620"></script>
+		<script src="../model/v1/Questions.js?v=20120620"></script>
+		<script src="../model/v1/Answer.js?v=20120620"></script>
+		<script src="../model/Parameter.js?v=20120620"></script>
+		<!-- <script src="../model/CountDown.js?v=20120620"></script>
+		<script src="../model/Next.js?v=20120620"></script>
+		<script src="../model/Content.js?v=20120614"></script> -->
+		<script src="../model/Campaign.js?v=20120620"></script>
+		<script src="../model/Page.js?v=20120620"></script>
+		<script src="../model/Question.js?v=20120620"></script>
+		<script src="../model/Questions.js?v=20120620"></script>
+		<script src="../model/Answer.js?v=20120620"></script>
+				
+		<script src="../ui/Base.js?v=20120620"></script>
+		<script src="../ui/Creative.js?v=20120620"></script>
+		<script src="../ui/PlayerME.js?v=20120620"></script>
+		<script src="../ui/model/Nav.js?v=20120620"></script>
+		<script src="../ui/Nav.js?v=20120620"></script>
+		<script src="../ui/model/Ad.js?v=20120620"></script>
+		<script src="../ui/Ad.js?v=20120620"></script>
+		<script src="../ui/model/Landing.js?v=20120620"></script>
+		<script src="../ui/Landing.js?v=20120620"></script>
+		<script src="../ui/model/Next.js?v=20120620"></script>
+		<script src="../ui/Next.js?v=20120620"></script>
+		<script src="../ui/Question.js?v=20120620"></script>
+		<script src="../ui/Questions.js?v=20120620"></script>
+		<script src="../ui/Already.js?v=20120620"></script>
+		<script src="../ui/Page.js?v=20120614"></script>
+		<script src="../ui/model/Complete.js?v=20120620"></script>
+		<script src="../ui/Complete.js?v=20120620"></script>
+		<script src="../ui/model/Thankyou.js?v=20120620"></script>
+		<script src="../ui/Thankyou.js?v=20120620"></script>
+		<script src="../ui/model/Sorry.js?v=20120620"></script>
+		<script src="../ui/Sorry.js?v=20120620"></script>
+		<script src="../ui/model/Content.js?v=20120620"></script>
+		<script src="../ui/Content.js?v=20120614"></script>
+		<script src="../ui/Body.js?v=20120620"></script>
+		<script src="../ui/Footer.js?v=20120620"></script>
+		<script src="../ui/Header.js?v=20120620"></script>
+		<script src="../ui/model/Theme.js?v=20120620"></script>
+		<script src="../ui/Theme.js?v=20120620"></script>
+		<script src="../ui/Conversion.js?v=20120620"></script>
+		<script src="../ui/Canvas.js?v=20120620"></script>
+
+		<script src="../controller/Controller.js?v=20120620"></script>
+		
+		<!-- Test Script -->
+		<script src="mr.ui.Complete.test.js"></script>
+	</body>
+</html>
+

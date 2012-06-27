@@ -1,0 +1,33 @@
+/**
+ * プラスワン様向けCSS
+ * 20120614
+ */
+/* フッタ */
+.mr-ui-header {
+	background-image:url(header.png);
+}
+/* ヘッダ */
+.mr-ui-footer {
+	background-image:url(footer.png);
+}
+/* ナビゲーション枠 */
+.mr-ui-nav {
+	-webkit-box-shadow: inset 0 0 10px #79D813;
+	box-shadow:         inset 0 0 10px #79D813;
+}
+/* ナビゲーションエリア文字色 */
+.mr-ui-nav p {
+	color:              #79D813;        
+}
+/* ボーダー */
+.mr-ui-content {
+	border:             1px solid #79D813;
+}
+/* タイトル文字色 */
+.mr-ui-content-block .mr-ui-title b {
+	color:              #79D813;
+}
+/* ボタン色 */
+.mr-ui-button {
+	background:         -webkit-gradient(linear, left top, left bottom, from(#96F41C), to(#77C116));
+}

@@ -1,0 +1,89 @@
+# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# 動作確認データ
+status1:
+  uuid: EnqStatus1
+  status: 1
+
+status1_first:
+  uuid: EnqStatus1First
+  status: 1
+
+# アンケートを作成中
+status0:
+  uuid: EnqStatus0
+  status: 0
+
+# アンケート作成完了
+status9:
+  uuid: EnqStatus9
+  status: 9
+
+# nil動作確認用
+nullable:
+  uuid: EnqNullable
+  status: 1
+
+nullable_first_1:
+  uuid: EnqNullableFirst1
+  status: 1
+  
+nullable_first_2:
+  uuid: EnqNullableFirst2
+  status: 1
+
+nullable_first_3:
+  uuid: EnqNullableFirst3
+  status: 1
+
+# 空回答確認用
+null_answer:
+  uuid: EnqNullAnswer
+  status: 1
+  
+# 異常系の確認用データ
+# アンケートの最初のページがNull
+first_page_null:
+  uuid: FirstPageNullEnqID
+  status: 1
+
+first_page_id_null:
+  uuid: FirstPageIDNullEnqID
+  status: 1
+
+# キャンペーンの状態が入稿前
+camp_status0:
+  uuid: CampaignStatus0EnqID
+  status: 1
+
+# キャンペーンの状態が終了
+camp_closed:
+  uuid: CampaignClosedEnqID
+  status: 1
+
+# 設問と選択肢が矛盾している
+incons_question:
+  uuid: InconsistencyQuestionEnqID
+  status: 1
+
+
+# 養命酒
+yomei_shu:
+  uuid: YomeiShuEnqID
+  status: 1
+
+# プラスワン
+plus_one:
+  uuid: PlusOneEnqID
+  status: 1
+
+# レッグマジックX
+legmagicX:
+  uuid: LegMagicXEnqID
+  status: 1
+
+# 永谷園
+nagatani_en:
+  uuid: NagataniEnEnqID
+  status: 1

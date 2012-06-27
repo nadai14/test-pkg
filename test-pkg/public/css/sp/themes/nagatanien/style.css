@@ -1,0 +1,38 @@
+/**
+ * 永谷園様向けCSS
+ * 20120622
+ */
+/* フッタ */
+.mr-ui-header {
+	background-image:url(header.png);
+}
+/* ヘッダ */
+.mr-ui-footer {
+	background-image:url(footer.png);
+}
+/* ナビゲーション枠 */
+.mr-ui-nav {
+	-webkit-box-shadow: inset 0 0 10px #95ddfe;
+	box-shadow:         inset 0 0 10px #95ddfe;
+}
+/* ナビゲーションエリア文字色 */
+.mr-ui-nav p {
+	color:              #01a5ed;        
+}
+/* ボーダー */
+.mr-ui-content {
+	border:             1px solid #01a5ed;
+}
+/* タイトル文字色 */
+.mr-ui-content-block .mr-ui-title b {
+	color:              #002977;
+}
+/* ボタン色 */
+.mr-ui-button {
+	background:         -webkit-gradient(linear, left top, left bottom, from(#fdb921), to(#fb9a10));
+}
+/* おめでとうございます。 */
+.mr-ui-thankyou .mr-ui-title,
+.mr-ui-thankyou .mr-ui-title b {
+	color:             #ffaa00 !important;
+}

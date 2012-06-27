@@ -1,0 +1,1071 @@
+# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# 動作確認データ
+radio_male:
+  uuid: RadioMale
+  question_id: QuestionRadio
+  order: 1
+  content: 男性
+
+radio_female:
+  uuid: RadioFemale
+  question_id: QuestionRadio
+  order: 2
+  content: 女性
+
+select_choice1:
+  uuid: SelectChoice1
+  question_id: QuestionSelect
+  order: 1
+  content: 選択肢1
+
+select_choice2:
+  uuid: SelectChoice2
+  question_id: QuestionSelect
+  order: 2
+  content: 選択肢2
+
+select_hokkaido:
+  uuid: SelectHokkaido
+  question_id: QuestionPrefectures
+  order: 1
+  content: 北海道
+
+select_aomori:
+  uuid: SelectAomori
+  question_id: QuestionPrefectures
+  order: 2
+  content: 青森県
+
+select_iwate:
+  uuid: Select
+  question_id: QuestionPrefectures
+  order: 3
+  content: 岩手県
+
+select_miyagi:
+  uuid: SelectMiyagi
+  question_id: QuestionPrefectures
+  order: 4
+  content: 宮城県
+
+select_akita:
+  uuid: SelectAkita
+  question_id: QuestionPrefectures
+  order: 5
+  content: 秋田県
+
+select_yamagata:
+  uuid: SelectYamagata
+  question_id: QuestionPrefectures
+  order: 6
+  content: 山形県
+
+select_hukushima:
+  uuid: SelectHukushima
+  question_id: QuestionPrefectures
+  order: 7
+  content: 福島県
+
+select_ibaraki:
+  uuid: SelectIbaraki
+  question_id: QuestionPrefectures
+  order: 8
+  content: 茨城県
+
+select_tochigi:
+  uuid: SelectTochigi
+  question_id: QuestionPrefectures
+  order: 9
+  content: 栃木県
+
+select_gunma:
+  uuid: SelectGunma
+  question_id: QuestionPrefectures
+  order: 10
+  content: 群馬県
+
+select_saitama:
+  uuid: SelectSaitama
+  question_id: QuestionPrefectures
+  order: 11
+  content: 埼玉県
+
+select_chiba:
+  uuid: SelectChiba
+  question_id: QuestionPrefectures
+  order: 12
+  content: 千葉県
+
+select_tokyo:
+  uuid: SelectTokyo
+  question_id: QuestionPrefectures
+  order: 13
+  content: 東京都
+
+select_kanagawa:
+  uuid: SelectKanagawa
+  question_id: QuestionPrefectures
+  order: 14
+  content: 神奈川県
+
+select_niigata:
+  uuid: SelectNiigata
+  question_id: QuestionPrefectures
+  order: 15
+  content: 新潟県
+
+select_toyama:
+  uuid: SelectToyama
+  question_id: QuestionPrefectures
+  order: 16
+  content: 富山県
+
+select_ishikawa:
+  uuid: SelectIshikawa
+  question_id: QuestionPrefectures
+  order: 17
+  content: 石川県
+
+select_hukui:
+  uuid: SelectHukui
+  question_id: QuestionPrefectures
+  order: 18
+  content: 福井県
+
+select_yamanashi:
+  uuid: SelectYamanashi
+  question_id: QuestionPrefectures
+  order: 19
+  content: 山梨県
+
+select_nagano:
+  uuid: SelectNagano
+  question_id: QuestionPrefectures
+  order: 20
+  content: 長野県
+
+select_gihu:
+  uuid: SelectGihu
+  question_id: QuestionPrefectures
+  order: 21
+  content: 岐阜県
+
+select_shizuoka:
+  uuid: SelectShizuoka
+  question_id: QuestionPrefectures
+  order: 22
+  content: 静岡県
+
+select_aichi:
+  uuid: SelectAichi
+  question_id: QuestionPrefectures
+  order: 23
+  content: 愛知県
+
+select_mie:
+  uuid: SelectMie
+  question_id: QuestionPrefectures
+  order: 24
+  content: 三重県
+
+select_shiga:
+  uuid: SelectShiga
+  question_id: QuestionPrefectures
+  order: 25
+  content: 滋賀県
+
+select_Kyoto:
+  uuid: SelectKyoto
+  question_id: QuestionPrefectures
+  order: 26
+  content: 京都府
+
+select_osaka:
+  uuid: SelectOsaka
+  question_id: QuestionPrefectures
+  order: 27
+  content: 大阪府
+
+select_Hyogo:
+  uuid: SelectHyogo
+  question_id: QuestionPrefectures
+  order: 28
+  content: 兵庫県
+
+select_Nara:
+  uuid: SelectNara
+  question_id: QuestionPrefectures
+  order: 29
+  content: 奈良県
+
+select_yakayama:
+  uuid: SelectWakayama
+  question_id: QuestionPrefectures
+  order: 30
+  content: 和歌山県
+
+select_Tottori:
+  uuid: SelectTottori
+  question_id: QuestionPrefectures
+  order: 31
+  content: 鳥取県
+
+select_shimane:
+  uuid: SelectShimane
+  question_id: QuestionPrefectures
+  order: 32
+  content: 島根県
+
+select_okayama:
+  uuid: SelectOkayama
+  question_id: QuestionPrefectures
+  order: 33
+  content: 岡山県
+
+select_hiroshima:
+  uuid: SelectHiroshima
+  question_id: QuestionPrefectures
+  order: 34
+  content: 広島県
+
+select_yamaguchi:
+  uuid: SelectYamaguchi
+  question_id: QuestionPrefectures
+  order: 35
+  content: 山口県
+
+select_tokushima:
+  uuid: SelectTokushima
+  question_id: QuestionPrefectures
+  order: 36
+  content: 徳島県
+
+select_kagawa:
+  uuid: SelectKagawa
+  question_id: QuestionPrefectures
+  order: 37
+  content: 香川県
+
+select_ehime:
+  uuid: SelectEhime
+  question_id: QuestionPrefectures
+  order: 38
+  content: 愛媛県
+
+select_kouchi:
+  uuid: SelectKouchi
+  question_id: QuestionPrefectures
+  order: 39
+  content: 高知県
+
+select_hukuoka:
+  uuid: SelectHukuoka
+  question_id: QuestionPrefectures
+  order: 40
+  content: 福岡県
+
+select_saga:
+  uuid: SelectSaga
+  question_id: QuestionPrefectures
+  order: 41
+  content: 佐賀県
+
+select_nagasaki:
+  uuid: SelectNagasaki
+  question_id: QuestionPrefectures
+  order: 42
+  content: 長崎県
+
+select_kumamoto:
+  uuid: SelectKumamoto
+  question_id: QuestionPrefectures
+  order: 43
+  content: 熊本県
+
+select_oita:
+  uuid: SelectOita
+  question_id: QuestionPrefectures
+  order: 44
+  content: 大分県
+
+select_miyazaki:
+  uuid: SelectMiyazaki
+  question_id: QuestionPrefectures
+  order: 45
+  content: 宮崎県
+ 
+select_kagoshima:
+  uuid: SelectKagoshima
+  question_id: QuestionPrefectures
+  order: 46
+  content: 鹿児島県
+ 
+select_Okinawa:
+  uuid: SelectOkinawa
+  question_id: QuestionPrefectures
+  order: 47
+  content: 沖縄県
+ 
+check_choice1:
+  uuid: CheckChoice1
+  question_id: QuestionCheck
+  order: 1
+  content: チェックボックス1
+
+check_choice2:
+  uuid: CheckChoice2
+  question_id: QuestionCheck
+  order: 2
+  content: チェックボックス2
+
+check_choice3:
+  uuid: CheckChoice3
+  question_id: QuestionCheck
+  order: 3
+  content: チェックボックス3
+  
+# 空回答確認用
+unrequired_radio:
+  uuid: TmpRadio
+  question_id: QuestionUnrequiredRadio
+  order: 1
+  content: 両性
+
+unrequired_select:
+  uuid: TmpSelect
+  question_id: QuestionUnrequiredSelect
+  order: 1
+  content: 選択
+
+unrequired_check:
+  uuid: TmpCheck
+  question_id: QuestionUnrequiredCheck
+  order: 1
+  content: 選択肢
+
+  
+# 養命酒
+yomei_shu_radio_male:
+  uuid: YomeiShuRadioMale
+  question_id: YomeiShuQuestion1
+  order: 1
+  content: 男性
+
+yomei_shu_radio_female:
+  uuid: YomeiShuRadioFemale
+  question_id: YomeiShuQuestion1
+  order: 2
+  content: 女性
+
+yomei_shu_numeric_20:
+  uuid: YomeiShuNumeric20
+  question_id: YomeiShuQuestion2
+  order: 1
+  content: 20~29歳
+
+yomei_shu_numeric_30:
+  uuid: YomeiShuNumeric30
+  question_id: YomeiShuQuestion2
+  order: 2
+  content: 30~39歳
+
+yomei_shu_numeric_40:
+  uuid: YomeiShuNumeric40
+  question_id: YomeiShuQuestion2
+  order: 3
+  content: 40~49歳
+
+yomei_shu_numeric_50:
+  uuid: YomeiShuNumeric50
+  question_id: YomeiShuQuestion2
+  order: 4
+  content: 50~59歳
+
+yomei_shu_numeric_60:
+  uuid: YomeiShuNumeric60
+  question_id: YomeiShuQuestion2
+  order: 5
+  content: 60歳以上
+
+yomei_shu_kaori_kyoumi_1:
+  uuid: YomeiShuKaoriKyoumi1
+  question_id: YomeiShuQuestion3
+  order: 1
+  content: 非常に興味を持った
+
+yomei_shu_kaori_kyoumi_2:
+  uuid: YomeiShuKaoriKyoumi2
+  question_id: YomeiShuQuestion3
+  order: 2
+  content: やや興味を持った
+
+yomei_shu_kaori_kyoumi_3:
+  uuid: YomeiShuKaoriKyoumi3
+  question_id: YomeiShuQuestion3
+  order: 3
+  content: どちらともいえない
+
+yomei_shu_kaori_kyoumi_4:
+  uuid: YomeiShuKaoriKyoumi4
+  question_id: YomeiShuQuestion3
+  order: 4
+  content: あまり興味は持たなかった
+
+yomei_shu_kaori_kyoumi_5:
+  uuid: YomeiShuKaoriKyoumi5
+  question_id: YomeiShuQuestion3
+  order: 5
+  content: 全く興味は持たなかった
+
+yomei_shu_drink_1:
+  uuid: YomeiShuDrink1
+  question_id: YomeiShuQuestion4
+  order: 1
+  content: 非常に飲んでみたい
+
+yomei_shu_drink_2:
+  uuid: YomeiShuDrink2
+  question_id: YomeiShuQuestion4
+  order: 2
+  content: やや飲んでみたい
+
+yomei_shu_drink_3:
+  uuid: YomeiShuDrink3
+  question_id: YomeiShuQuestion4
+  order: 3
+  content: どちらともいえない
+
+yomei_shu_drink_4:
+  uuid: YomeiShuDrink4
+  question_id: YomeiShuQuestion4
+  order: 4
+  content: あまり飲んでみたくない
+
+yomei_shu_drink_5:
+  uuid: YomeiShuDrink5
+  question_id: YomeiShuQuestion4
+  order: 5
+  content: 全く飲んでみたくない
+
+yomei_shu_buy_1:
+  uuid: YomeiShuBuy1
+  question_id: YomeiShuQuestion5
+  order: 1
+  content: 非常に買ってみたい
+
+yomei_shu_buy_2:
+  uuid: YomeiShuBuy2
+  question_id: YomeiShuQuestion5
+  order: 2
+  content: やや買ってみたい
+
+yomei_shu_buy_3:
+  uuid: YomeiShuBuy3
+  question_id: YomeiShuQuestion5
+  order: 3
+  content: どちらともいえない
+
+yomei_shu_buy_4:
+  uuid: YomeiShuBuy4
+  question_id: YomeiShuQuestion5
+  order: 4
+  content: あまり買ってみたくはない
+
+yomei_shu_buy_5:
+  uuid: YomeiShuBuy5
+  question_id: YomeiShuQuestion5
+  order: 5
+  content: まったく買ってみたくはない
+
+yomei_shu_sp_know_1:
+  uuid: YomeiShuSPKnow1
+  question_id: YomeiShuQuestion6
+  order: 1
+  content: 以前から知っていた
+
+yomei_shu_sp_know_2:
+  uuid: YomeiShuSPKnow2
+  question_id: YomeiShuQuestion6
+  order: 2
+  content: 今回はじめて知った
+
+yomei_shu_sp_drank_1:
+  uuid: YomeiShuSPDrank1
+  question_id: YomeiShuQuestion7
+  order: 1
+  content: 購入して飲んだことがある
+
+yomei_shu_sp_drank_2:
+  uuid: YomeiShuSPDrank2
+  question_id: YomeiShuQuestion7
+  order: 2
+  content: 試飲会や試供品で飲んだことがある
+
+yomei_shu_sp_drank_3:
+  uuid: YomeiShuSPDrank3
+  question_id: YomeiShuQuestion7
+  order: 3
+  content: 飲んだことはない
+
+yomei_shu_know_1:
+  uuid: YomeiShuKnow1
+  question_id: YomeiShuQuestion8
+  order: 1
+  content: 以前から知っていた
+
+yomei_shu_know_2:
+  uuid: YomeiShuKnow2
+  question_id: YomeiShuQuestion8
+  order: 2
+  content: 今回はじめて知った
+
+yomei_shu_drank_1:
+  uuid: YomeiShuDrank1
+  question_id: YomeiShuQuestion9
+  order: 1
+  content: 購入して飲んだことがある
+
+yomei_shu_drank_2:
+  uuid: YomeiShuDrank2
+  question_id: YomeiShuQuestion9
+  order: 2
+  content: 試飲会や試供品で飲んだことがある
+
+yomei_shu_drank_3:
+  uuid: YomeiShuDrank3
+  question_id: YomeiShuQuestion9
+  order: 3
+  content: 飲んだことはない
+
+yomei_shu_watch_1:
+  uuid: YomeiShuWatch1
+  question_id: YomeiShuQuestion10
+  order: 1
+  content: 商品が気になったから
+
+yomei_shu_watch_2:
+  uuid: YomeiShuWatch2
+  question_id: YomeiShuQuestion10
+  order: 2
+  content: ポイントがついていたから
+
+yomei_shu_watch_3:
+  uuid: YomeiShuWatch3
+  question_id: YomeiShuQuestion10
+  order: 3
+  content: 動画が面白そうだったから
+
+# プラスワン
+plus_one_radio_male:
+  uuid: PlusOneRadioMale
+  question_id: PlusOneQuestion1
+  order: 1
+  content: 男性
+
+plus_one_radio_female:
+  uuid: PlusOneRadioFemale
+  question_id: PlusOneQuestion1
+  order: 2
+  content: 女性
+
+plus_one_numeric_u19:
+  uuid: PlusOneNumericU19
+  question_id: PlusOneQuestion2
+  order: 1
+  content: 19歳以下
+
+plus_one_numeric_20:
+  uuid: PlusOneNumeric20
+  question_id: PlusOneQuestion2
+  order: 2
+  content: 20~29歳
+
+plus_one_numeric_30:
+  uuid: PlusOneNumeric30
+  question_id: PlusOneQuestion2
+  order: 3
+  content: 30~39歳
+
+plus_one_numeric_40:
+  uuid: PlusOneNumeric40
+  question_id: PlusOneQuestion2
+  order: 4
+  content: 40~49歳
+
+plus_one_numeric_50:
+  uuid: PlusOneNumeric50
+  question_id: PlusOneQuestion2
+  order: 5
+  content: 50歳以上
+
+plus_one_scene_1:
+  uuid: PlusOneScene1
+  question_id: PlusOneQuestion3
+  order: 1
+  content: サークル等の仲間内で利用
+
+plus_one_scene_2:
+  uuid: PlusOneScene2
+  question_id: PlusOneQuestion3
+  order: 2
+  content: スポーツチームで利用
+
+plus_one_scene_3:
+  uuid: PlusOneScene3
+  question_id: PlusOneQuestion3
+  order: 3
+  content: 勤務している企業/お店で利用
+
+plus_one_scene_4:
+  uuid: PlusOneScene4
+  question_id: PlusOneQuestion3
+  order: 4
+  content: 家族・友達で利用
+
+plus_one_scene_5:
+  uuid: PlusOneScene5
+  question_id: PlusOneQuestion3
+  order: 5
+  content: プレゼントとして利用
+
+plus_one_cons_1:
+  uuid: PlusOneConsideration1
+  question_id: PlusOneQuestion4
+  order: 1
+  content: デザイン
+
+plus_one_cons_2:
+  uuid: PlusOneConsideration2
+  question_id: PlusOneQuestion4
+  order: 2
+  content: 着心地
+
+plus_one_cons_3:
+  uuid: PlusOneConsideration3
+  question_id: PlusOneQuestion4
+  order: 3
+  content: 耐久性
+
+plus_one_cons_4:
+  uuid: PlusOneConsideration4
+  question_id: PlusOneQuestion4
+  order: 4
+  content: 価格
+
+plus_one_cons_5:
+  uuid: PlusOneConsideration5
+  question_id: PlusOneQuestion4
+  order: 5
+  content: 制作スピード
+
+plus_one_good_1:
+  uuid: PlusOneGood1
+  question_id: PlusOneQuestion5
+  order: 1
+  content: デザインを自由に選べる
+
+plus_one_good_2:
+  uuid: PlusOneGood2
+  question_id: PlusOneQuestion5
+  order: 2
+  content: ウェブから簡単に発注できる
+
+plus_one_good_3:
+  uuid: PlusOneGood3
+  question_id: PlusOneQuestion5
+  order: 3
+  content: 顧客満足度が高い
+
+plus_one_good_4:
+  uuid: PlusOneGood4
+  question_id: PlusOneQuestion5
+  order: 4
+  content: 見積もりが簡単にできる
+
+plus_one_good_5:
+  uuid: PlusOneGood5
+  question_id: PlusOneQuestion5
+  order: 5
+  content: 販売実績が年間150万枚と豊富
+
+plus_one_satis1:
+  uuid: PlusOneSatisfaction1
+  question_id: PlusOneQuestion6
+  order: 1
+  content: 92%
+
+plus_one_satis2:
+  uuid: PlusOneSatisfaction2
+  question_id: PlusOneQuestion6
+  order: 2
+  content: 83%
+
+plus_one_satis3:
+  uuid: PlusOneSatisfaction3
+  question_id: PlusOneQuestion6
+  order: 3
+  content: 71%
+
+plus_one_satis4:
+  uuid: PlusOneSatisfaction4
+  question_id: PlusOneQuestion6
+  order: 4
+  content: 64%
+
+plus_one_satis5:
+  uuid: PlusOneSatisfaction5
+  question_id: PlusOneQuestion6
+  order: 5
+  content: 50%
+
+plus_one_know_1:
+  uuid: PlusOneKnow1
+  question_id: PlusOneQuestion7
+  order: 1
+  content: 知っており、自分で利用したことがある。
+
+plus_one_know_2:
+  uuid: PlusOneKnow2
+  question_id: PlusOneQuestion7
+  order: 2
+  content: 知っており、知人が利用していたことがある。
+
+plus_one_know_3:
+  uuid: PlusOneKnow3
+  question_id: PlusOneQuestion7
+  order: 3
+  content: 知っていたが、利用したことはない。
+
+plus_one_know_4:
+  uuid: PlusOneKnow4
+  question_id: PlusOneQuestion7
+  order: 4
+  content: 知らなかった。
+
+plus_one_kyoumi_1:
+  uuid: PlusOneKyoumi1
+  question_id: PlusOneQuestion8
+  order: 1
+  content: 非常に興味を持った
+
+plus_one_kyoumi_2:
+  uuid: PlusOneKyoumi2
+  question_id: PlusOneQuestion8
+  order: 2
+  content: 少し興味を持った
+
+plus_one_kyoumi_3:
+  uuid: PlusOneKyoumi3
+  question_id: PlusOneQuestion8
+  order: 3
+  content: あまり興味を持たなかった
+
+plus_one_kyoumi_4:
+  uuid: PlusOneKyoumi4
+  question_id: PlusOneQuestion8
+  order: 4
+  content: 全く興味を持たなかった
+
+plus_one_use_1:
+  uuid: PlusOneUse1
+  question_id: PlusOneQuestion9
+  order: 1
+  content: 是非利用したいと思う
+
+plus_one_use_2:
+  uuid: PlusOneUse2
+  question_id: PlusOneQuestion9
+  order: 2
+  content: 機会があれば利用したいと思う
+
+plus_one_use_3:
+  uuid: PlusOneUse3
+  question_id: PlusOneQuestion9
+  order: 3
+  content: 利用したいと思わない
+
+plus_one_watch_1:
+  uuid: PlusOneWatch1
+  question_id: PlusOneQuestion10
+  order: 1
+  content: サービスが魅力的だったから
+
+plus_one_watch_2:
+  uuid: PlusOneWatch2
+  question_id: PlusOneQuestion10
+  order: 2
+  content: ポイントが魅力的だったから
+
+plus_one_watch_3:
+  uuid: PlusOneWatch3
+  question_id: PlusOneQuestion10
+  order: 3
+  content: どちらも魅力的だったから
+
+# レッグマジックX
+legmagicX_radio_male:
+  uuid: LegMagicXRadioMale
+  question_id: LegMagicXQuestion1
+  order: 1
+  content: 男性
+
+legmagicX_radio_female:
+  uuid: LegMagicXRadioFemale
+  question_id: LegMagicXQuestion1
+  order: 2
+  content: 女性
+
+legmagicX_numeric_u19:
+  uuid: LegMagicXNumericU19
+  question_id: LegMagicXQuestion2
+  order: 1
+  content: 19歳以下
+
+legmagicX_numeric_20:
+  uuid: LegMagicXNumeric20
+  question_id: LegMagicXQuestion2
+  order: 2
+  content: 20-29歳
+
+legmagicX_numeric_30:
+  uuid: LegMagicXNumeric30
+  question_id: LegMagicXQuestion2
+  order: 3
+  content: 30-39歳
+
+legmagicX_numeric_40:
+  uuid: LegMagicXNumeric40
+  question_id: LegMagicXQuestion2
+  order: 4
+  content: 40-49歳
+
+legmagicX_numeric_50:
+  uuid: LegMagicXNumeric50
+  question_id: LegMagicXQuestion2
+  order: 5
+  content: 50歳以上
+
+legmagicX_size_1:
+  uuid: LegMagicXSize1
+  question_id: LegMagicXQuestion3
+  order: 1
+  content: ある
+
+legmagicX_size_2:
+  uuid: LegMagicXSize2
+  question_id: LegMagicXQuestion3
+  order: 2
+  content: ない
+
+legmagicX_know_1:
+  uuid: LegMagicXKnow1
+  question_id: LegMagicXQuestion4
+  order: 1
+  content: はい
+
+legmagicX_know_2:
+  uuid: LegMagicXKnow2
+  question_id: LegMagicXQuestion4
+  order: 2
+  content: いいえ
+
+legmagicX_get_1:
+  uuid: LegMagicXGet1
+  question_id: LegMagicXQuestion5
+  order: 1
+  content: そう思う
+
+legmagicX_get_2:
+  uuid: LegMagicXGet2
+  question_id: LegMagicXQuestion5
+  order: 2
+  content: どちらかと言えばそう思う
+
+legmagicX_get_3:
+  uuid: LegMagicXGet3
+  question_id: LegMagicXQuestion5
+  order: 3
+  content: どちらとも思わない
+
+legmagicX_get_4:
+  uuid: LegMagicXGet4
+  question_id: LegMagicXQuestion5
+  order: 4
+  content: どちらかと言えばそう思わない
+
+legmagicX_get_5:
+  uuid: LegMagicXGet5
+  question_id: LegMagicXQuestion5
+  order: 5
+  content: そう思わない
+
+legmagicX_coin_1:
+  uuid: LegMagicXCoin1
+  question_id: LegMagicXQuestion6
+  order: 1
+  content: そう思う
+
+legmagicX_coin_2:
+  uuid: LegMagicXCoin2
+  question_id: LegMagicXQuestion6
+  order: 2
+  content: どちらかと言えばそう思う
+
+legmagicX_coin_3:
+  uuid: LegMagicXCoin3
+  question_id: LegMagicXQuestion6
+  order: 3
+  content: どちらとも思わない
+
+legmagicX_coin_4:
+  uuid: LegMagicXCoin4
+  question_id: LegMagicXQuestion6
+  order: 4
+  content: どちらかと言えばそう思わない
+
+legmagicX_coin_5:
+  uuid: LegMagicXCoin5
+  question_id: LegMagicXQuestion6
+  order: 5
+  content: そう思わない
+
+# 永谷園
+nagatani_en_radio_male:
+  uuid: NagataniEnRadioMale
+  question_id: NagataniEnQuestion1
+  order: 1
+  content: 男性
+
+nagatani_en_radio_female:
+  uuid: NagataniEnRadioFemale
+  question_id: NagataniEnQuestion1
+  order: 2
+  content: 女性
+
+nagatani_en_numeric_u19:
+  uuid: NagataniEnNumericU19
+  question_id: NagataniEnQuestion2
+  order: 1
+  content: 19歳以下
+
+nagatani_en_numeric_20:
+  uuid: NagataniEnNumeric20
+  question_id: NagataniEnQuestion2
+  order: 2
+  content: 20-29歳
+
+nagatani_en_numeric_30:
+  uuid: NagataniEnNumeric30
+  question_id: NagataniEnQuestion2
+  order: 3
+  content: 30-39歳
+
+nagatani_en_numeric_40:
+  uuid: NagataniEnNumeric40
+  question_id: NagataniEnQuestion2
+  order: 4
+  content: 40-49歳
+
+nagatani_en_numeric_50:
+  uuid: NagataniEnNumeric50
+  question_id: NagataniEnQuestion2
+  order: 5
+  content: 50歳以上
+
+nagatani_en_wakeup_1:
+  uuid: NagataniEnWakeUp1
+  question_id: NagataniEnQuestion3
+  order: 1
+  content: よくある
+
+nagatani_en_wakeup_2:
+  uuid: NagataniEnWakeUp2
+  question_id: NagataniEnQuestion3
+  order: 2
+  content: たまにある
+
+nagatani_en_wakeup_3:
+  uuid: NagataniEnWakeUp3
+  question_id: NagataniEnQuestion3
+  order: 3
+  content: どちらとも言えない
+
+nagatani_en_wakeup_4:
+  uuid: NagataniEnWakeUp4
+  question_id: NagataniEnQuestion3
+  order: 4
+  content: あまりない
+
+nagatani_en_wakeup_5:
+  uuid: NagataniEnWakeUp5
+  question_id: NagataniEnQuestion3
+  order: 5
+  content: 全くない
+
+nagatani_en_know_1:
+  uuid: NagataniEnKnow1
+  question_id: NagataniEnQuestion4
+  order: 1
+  content: よく知っていた
+
+nagatani_en_know_2:
+  uuid: NagataniEnKnow2
+  question_id: NagataniEnQuestion4
+  order: 2
+  content: まあ知っていた
+
+nagatani_en_know_3:
+  uuid: NagataniEnKnow3
+  question_id: NagataniEnQuestion4
+  order: 3
+  content: 知らなかった
+
+nagatani_en_int_1:
+  uuid: NagataniEnInt1
+  question_id: NagataniEnQuestion5
+  order: 1
+  content: 非常に興味がある
+
+nagatani_en_int_2:
+  uuid: NagataniEnInt2
+  question_id: NagataniEnQuestion5
+  order: 2
+  content: まあ興味がある
+
+nagatani_en_int_3:
+  uuid: NagataniEnInt3
+  question_id: NagataniEnQuestion5
+  order: 3
+  content: どちらとも思わない
+
+nagatani_en_int_4:
+  uuid: NagataniEnInt4
+  question_id: NagataniEnQuestion5
+  order: 4
+  content: あまり興味がない
+
+nagatani_en_int_5:
+  uuid: NagataniEnInt5
+  question_id: NagataniEnQuestion5
+  order: 5
+  content: 全く興味がない
+
+nagatani_en_mixi_1:
+  uuid: NagataniEnMixi1
+  question_id: NagataniEnQuestion6
+  order: 1
+  content: 申し込みたい
+
+nagatani_en_mixi_2:
+  uuid: NagataniEnMixi2
+  question_id: NagataniEnQuestion6
+  order: 2
+  content: どちらともいえない
+
+nagatani_en_mixi_3:
+  uuid: NagataniEnMixi3
+  question_id: NagataniEnQuestion6
+  order: 3
+  content: 申込みたくない

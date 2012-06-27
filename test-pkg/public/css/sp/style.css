@@ -1,0 +1,264 @@
+/* * * * * * * * * * * * * * * * * * * *
+ * Basic structure
+ * * * * * * * * * * * * * * * * * * * */ 
+ 
+	.mr-ui-header {
+		width:   100%;
+		display: none;
+	}
+	
+	/*wrap*/
+	.mr-ui-body {
+		padding: 15px;
+	}
+	
+		
+		.mr-ui-ad {
+			background-color:   #000;
+			/*border-radius: 8px;
+			-webkit-border-radius: 8px;*/
+			padding:            10px;
+			margin-bottom:      1em;
+			text-align:         center;
+		}
+	
+			.mr-ui-ad .mr-ui-player {
+				width:            265px;
+				height:           154px;
+				margin-left:      auto;
+				margin-right:     auto;	
+			}
+			
+		.mr-ui-nav {
+			padding:                0.4em;
+			-webkit-box-shadow:     0 0 10px #333 inset;
+			box-shadow:             0 0 10px #333 inset;
+		}
+
+			.mr-ui-nav p {
+				margin:                 0px;
+				text-align:             center;
+				color:                  #333;
+				text-shadow:            1px 1px 0 rgba(150, 150, 150, 0.3);
+				
+			}
+
+			/* conversion */
+		.mr-ui-conversion {
+			margin-top:            1em;
+		}
+		
+		
+		.mr-ui-content {
+			margin-top:            1em;
+			background-color:      #ebebeb;
+			border:                1px solid #CCCCCC;
+			border-radius:         8px;
+			-webkit-border-radius: 8px;
+			padding-bottom:        0.5em;
+		}
+		
+			/**
+			 * This class is super set of classes below:
+			 * 
+			 * .mr-ui-landing
+			 * .mr-ui-page
+			 * .mr-ui-already
+			 * .mr-ui-sorry
+			 * 
+			 * to avoid css redundancy! LETS BE SMART! 
+			 */
+			.mr-ui-content .mr-ui-content-block {
+				padding-left:        0.4em;
+				margin-right:        0.4em;
+			}
+			
+				.mr-ui-content-block .mr-ui-title {
+					margin-top:        0.4em;
+					margin-bottom:     0.4em;
+				}
+			
+					.mr-ui-content-block .mr-ui-title b {
+						font-size:       1.3em;
+						color:           #333;
+					}
+				
+				.mr-ui-content-block .mr-ui-description {
+					margin-top:        0.4em;
+				}
+				
+			/**
+			 * 	for landing page
+			 */
+			.mr-ui-landing {
+				
+			}
+		
+			.mr-ui-page {
+				
+			}
+				
+				.mr-ui-page .mr-ui-questions {
+					margin-bottom:      0.4em;
+				}
+					
+					.mr-ui-questions .mr-ui-title {
+						text-align:      left;
+					}
+					
+					.mr-ui-questions .mr-ui-title b {
+						color:            #222;
+						font-size:        1em;
+					}
+					
+						.mr-ui-questions .mr-ui-question {
+							margin-bottom:  1em;
+						}
+						
+							.mr-ui-question .mr-ui-answer {
+								line-height:  2em;
+							}
+							
+					
+				.mr-ui-page .mr-ui-next {
+					
+					/* float: right; */
+				}
+				
+			.mr-ui-complete {
+				text-align: center;
+			}
+			
+				.mr-ui-complete .mr-ui-button {
+					margin-top:    3em;
+					
+				}
+				
+			.mr-ui-thankyou {
+				text-align: center;
+			}
+			
+				.mr-ui-thankyou .mr-ui-button {
+					margin-top:    3em;
+				}
+				
+			.mr-ui-already {
+			}
+			
+				.mr-ui-already .mr-ui-title {
+				}
+				
+				
+				.mr-ui-already .mr-ui-message {
+					margin-left:  auto;
+					margin-right: auto;
+					margin-top:   10px;
+					text-align:   center;
+				}
+				
+				.mr-ui-already .mr-ui-client {
+					margin-left:  auto;
+					margin-right: auto;
+					margin-top:   10px;
+					text-align:   center;
+				}
+			
+			.mr-ui-sorry {
+				
+			}
+				.mr-ui-sorry .mr-ui-title {
+					text-align:   center;
+				}
+				
+				.mr-ui-sorry .mr-ui-description {
+					text-align:   center;
+				}
+				
+	/* footer */
+	.mr-ui-footer {
+		border-top:      1px solid #ebebeb;
+		padding-top:     0.5em;
+		display:         none;
+	}
+
+		.mr-ui-footer img {
+			vertical-align: top;
+		}
+		
+	
+/* * * * * * * * * * * * * * * * * * * *
+ * Assets
+ * * * * * * * * * * * * * * * * * * * */ 
+.mr-ui-button {
+	border-radius:    5px;
+	background-color: #333;
+	background:      -moz-linear-gradient(top, #E5E4E1, #9E9D9A);
+	background:      -webkit-gradient(linear, left top, left bottom, from(#E5E4E1), to(#9E9D9A));
+	width:            80%; 
+	margin-top:       5px;
+	margin-left:      auto;
+	margin-right:     auto;
+	display:          block;
+	line-height:      3em;/*2em*/
+	/* font-size:        85%; */
+	text-align:       center;
+	cursor:           pointer;
+}
+
+.mr-ui-button:disabled {
+	background:       none;
+	cursor:           none;
+}
+
+.mr-ui-button a,
+a .mr-ui-button
+{
+	color:            #222;
+	text-decoration:  none;
+}
+
+.mr-ui-result-hide .mr-ui-result {
+	display: none;
+}
+
+.mr-ui-result {
+	display:    inline-block;
+	width:      2em;
+	text-align: center;
+}
+
+.mr-ui-correct {
+	font-weight: bold;
+	color:       #0000FF;
+}
+
+.mr-ui-wrong {
+	color:       #FF0000;
+}
+
+.clear-type {
+	-webkit-transform-origin: 0 0;
+	 -webkit-transform: scale(1, 1.01);
+	 -moz-transform-origin: 0 0;
+	 -moz-transform: scale(1, 1.01);
+	 -ms-transform-origin: 0 0;
+	 -ms-transform: scale(1, 1.02); /* IE9����1.02 */
+	 -o-transform-origin: 0 0;
+	 -o-transform: scale(1, 1.01);
+	 text-shadow: 1px 1px 0 rgba(50, 50, 50, 0.3);
+}
+
+/* * * * * * * * * * * * * * * * * * * *
+ * hide template
+ * * * * * * * * * * * * * * * * * * * */ 
+.mr-ui-template {
+	display: none;
+}
+
+.mr-ui-hidden {
+	display: none;
+}
+
+.mejs-overlay-play {
+	display: none;
+}

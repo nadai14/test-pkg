@@ -1,0 +1,337 @@
+
+/* ==|== primary styles =====================================================
+Author: Shinichiro FUJITA
+Author: Toshiya TSURU
+========================================================================== */
+
+/* * * * * * * * * * * * * * * * * * * *
+ * Basic structure
+ * * * * * * * * * * * * * * * * * * * */ 
+ 
+.mr-ui-canvas {
+	font-size:           1em;
+	line-height:         1.4;
+	width:               950px;
+	height:              587px;
+	background-position: center top;
+	background-repeat:   no-repeat;
+	position:            relative;
+	padding:             0;	
+	margin-left:         auto;
+	margin-right:        auto;
+}
+
+	.mr-ui-header {
+		width:950px;/*before the change 760px*/
+		height:86px;/*before the change 146px*/
+	}
+	
+	.mr-ui-body {
+		width:950px;/*before the change 760px*/
+		height:476px;/*before the change 294px*/
+	}
+	
+		.mr-ui-ad {
+			width:      548px;/*before the change 355px*/
+			height:     416px;/*before the change 254px*/
+			margin-top: 10px;/*before the change 20px*/
+			margin-left:0x;
+			float:      left;
+			
+		}
+			
+			.mejs-container.mr-ui-player, 
+			.mr-ui-ad .mr-ui-creative {
+				width:        528px;/*before the change 355px*/
+				height:       297px;/*before the change 204px*/
+				margin-top:   59.5px;/*add new 動画画面の縦横比にあわせて調整*/
+				margin-left:  10px; /*add new*/
+				background-color:#000;
+			}
+			
+			.mr-ui-ad .mr-ui-creative {
+				text-align:       center;
+				vertical-align:   middle;
+			}
+			
+				.mr-ui-creative img {
+					vertical-align:   middle;
+				}
+				
+		.mr-ui-nav {
+			width:             548px;
+			height:            40px;
+			/*margin-top:10px;*/
+			-webkit-box-shadow:0 0 10px #CCCCCC inset;
+			box-shadow:        0 0 10px #333 inset;
+			float:             left;
+		}
+
+			.mr-ui-nav p {
+				margin:          0;
+				line-height:     40px;
+				text-align:      center;
+				color:#333;
+				text-shadow: 1px 1px 0 rgba(150, 150, 150, 0.3);
+			}
+
+		.mr-ui-content {
+			width:342px;/*before the change 355px*/
+			height:456px;/*before the change 254px*/
+			/*background-color: #ebebeb;*/
+			/*border:2px solid #CCCCCC;*/
+			/*border-radius: 8px;*/
+			/*-webkit-border-radius: 8px;*/
+			/*-moz-border-radius:8px;*/
+			margin-top:10px;/*before the change 20px*/
+			margin-right:20px;
+			float:right;
+		}
+			
+			/**
+			 * This class is super set of classes below:
+			 * 
+			 * .mr-ui-landing
+			 * .mr-ui-page
+			 * .mr-ui-already
+			 * 
+			 * to avoid css redundancy! BE SMART! 
+			 */
+			.mr-ui-content .mr-ui-content-block {
+				padding-left:  10px;
+				margin-right:  10px;
+			}
+			
+				.mr-ui-content-block .mr-ui-title {
+					margin-top:  10px;
+					text-align:  center;
+				}
+				
+					.mr-ui-content-block .mr-ui-title b {
+						font-size:   1.3em;
+						color:       #333;
+					}
+					
+				.mr-ui-content-block .mr-ui-description {
+					margin-top:    10px;
+				}
+				
+					.mr-ui-description b {
+						font-size:   1.3em;
+						color:       #333;
+					}
+					
+				.mr-ui-content-block .mr-ui-message {
+					margin-left:   auto;
+					margin-right:  auto;
+					margin-top:    10px;
+					text-align:    center;
+				}
+				
+			/**
+			 * 	for landing page
+			 */
+			.mr-ui-landing {
+				
+			}
+			
+				.mr-ui-landing .mr-ui-title {
+					
+				}
+				
+				.mr-ui-landing .mr-ui-description {
+					
+				}
+			
+			/**
+			 * 	for enquate page
+			 */
+			.mr-ui-page {
+				
+			}
+			
+				.mr-ui-page .mr-ui-title {
+				}
+
+				.mr-ui-page .mr-ui-questions {
+					margin-top:    10px;
+					margin-left:   10px;
+					margin-bottom: 10px;
+				}
+				
+					.mr-ui-questions .mr-ui-title {
+						text-align: left;
+					}
+					
+						.mr-ui-questions .mr-ui-title b {
+							color:       #222;
+							font-size:   1em;
+						}
+						
+						.mr-ui-questions .mr-ui-title b.mr-ui-required {
+							color:         #F00;
+							font-weight:   bold;
+						}
+						
+					.mr-ui-questions .mr-ui-description {
+					}
+					
+						.mr-ui-questions .mr-ui-description p {
+							text-align: left;
+							font-size:   1em;
+						}
+				
+				.mr-ui-page .mr-ui-next {
+					float: right;
+				}
+				
+			.mr-ui-complete {
+			}
+			
+				.mr-ui-complete .mr-ui-next {
+					width:         322px;
+				}
+			
+			.mr-ui-thankyou {
+			}
+			
+				.mr-ui-thankyou .mr-ui-description {
+					text-align: center;
+				}
+				
+				.mr-ui-thankyou .mr-ui-conversion {
+					text-align: center;
+				}
+				
+				.mr-ui-thankyou .mr-ui-next {
+					width:         322px;
+				}
+			
+			.mr-ui-already {
+			}
+			
+				.mr-ui-already .mr-ui-title {
+				}
+				
+				
+				.mr-ui-already .mr-ui-message {
+				}
+				
+				.mr-ui-already .mr-ui-client {
+					margin-left:  auto;
+					margin-right: auto;
+					margin-top:   10px;
+					text-align:   center;
+				}
+				
+				.mr-ui-already .mr-ui-button {
+					width:         322px;
+				}
+				
+			.mr-ui-sorry {
+			}
+				
+				.mr-ui-sorry .mr-ui-description {
+					text-align:    center;
+					margin-top:    20px;
+					margin-bottom: 20px;
+				}
+				
+				.mr-ui-sorry .mr-ui-button {
+					width:         322px;
+				}
+				
+	.mr-ui-footer {
+		width:950px;/*before the change 760px*/
+		height:25px;/*before the change 70px*/
+		margin-top:10px;/*add new*/
+		clear:both;
+	}
+
+		.mr-ui-footer p {
+			font-size:0.5em;
+			/*margin-top:30px;*/ /*before the change 30px*/
+			text-align:center;
+		}
+	
+	/* conversion */
+	.mr-ui-conversion {
+		width:  0px;
+		height: 0px;
+	}
+	
+		.mr-ui-conversion img {
+			width:  0px;
+			height: 0px;
+		}
+/* * * * * * * * * * * * * * * * * * * *
+ * Assets
+ * * * * * * * * * * * * * * * * * * * */ 
+.mr-ui-button {
+	border-radius:    5px;
+	background-color: #333;
+	background:      -moz-linear-gradient(top, #E5E4E1, #9E9D9A);
+	background:       -webkit-gradient(linear, left top, left bottom, from(#E5E4E1), to(#9E9D9A));
+	width:            7em;
+	line-height:      2em;
+	/* font-size:        85%; */
+	text-align:       center;
+	margin-top:       5px;
+	margin-right:     10px;
+	cursor:           pointer;
+}
+
+.mr-ui-button:disabled {
+	background:       none;
+	cursor:           none;
+}
+
+.mr-ui-button-no {
+	background:      -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#bbb));
+}
+
+.mr-ui-result-hide .mr-ui-result {
+	display: none;
+}
+
+.mr-ui-result {
+	display:    inline-block;
+	width:      2em;
+	text-align: center;
+}
+
+.mr-ui-correct {
+	font-weight: bold;
+	color:       #0000FF;
+}
+
+.mr-ui-wrong {
+	color:       #FF0000;
+}
+
+.clear-type {
+	 -webkit-transform-origin: 0 0;
+	 -webkit-transform:        scale(1, 1.01);
+	 -moz-transform-origin:    0 0;
+	 -moz-transform:           scale(1, 1.01);
+	 -ms-transform-origin:     0 0;
+	 -ms-transform:            scale(1, 1.02); /* IE9����1.02 */
+	 -o-transform-origin:      0 0;
+	 -o-transform:             scale(1, 1.01);
+	 text-shadow:              1px 1px 0 rgba(50, 50, 50, 0.3);
+}
+
+.max255 {
+	font-size:0.8em;
+}
+
+/* * * * * * * * * * * * * * * * * * * *
+ * hide template
+ * * * * * * * * * * * * * * * * * * * */ 
+.mr-ui-template {
+	display: none;
+}
+
+.mr-ui-hidden {
+	display: none;
+}

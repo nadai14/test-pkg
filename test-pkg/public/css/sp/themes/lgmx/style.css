@@ -1,0 +1,33 @@
+/**
+ * レッグマジック様向けCSS
+ * 20120614
+ */
+/* フッタ */
+.mr-ui-header {
+	background-image:url(header.png);
+}
+/* ヘッダ */
+.mr-ui-footer {
+	background-image:url(footer.png);
+}
+/* ナビゲーション枠 */
+.mr-ui-nav {
+	-webkit-box-shadow: inset 0 0 10px #E222AC;
+	box-shadow:         inset 0 0 10px #E222AC;
+}
+/* ナビゲーションエリア文字色 */
+.mr-ui-nav p {
+	color:              #E222AC;        
+}
+/* ボーダー */
+.mr-ui-content {
+	border:             1px solid #E222AC;
+}
+/* タイトル文字色 */
+.mr-ui-content-block .mr-ui-title b {
+	color:              #E222AC;
+}
+/* ボタン色 */
+.mr-ui-button {
+	background:         -webkit-gradient(linear, left top, left bottom, from(#FB62C6), to(#E222AC));
+}

@@ -1,0 +1,74 @@
+# coding: utf-8
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# スマートフォン用の動作確認データ
+scSPpage2to3_1:
+  uuid: SuccessConfirmSPPage2to3-1
+  enq_question_id: SuccessConfirmSPQuestion3
+  answer: 選択肢1
+  next_page_id: EnqSPSuccessConfirmPage3-1
+  wait_until: 1
+
+scSPpage2to3_2:
+  uuid: SuccessConfirmSPPage2to3-2
+  enq_question_id: SuccessConfirmSPQuestion3
+  answer: 選択肢2
+  next_page_id: EnqSPSuccessConfirmPage3-2
+  wait_until: 1
+
+scSPpage1to2_2_first:
+  uuid: SuccessConfirmSPPage1to2-2
+  enq_question_id: SuccessConfirmSPQuestion1First
+  answer: 東京都
+  next_page_id: EnqSPSuccessConfirmPage2-2First
+  wait_until: 1
+
+# PC用の動作確認データ
+scPCpage2to3_1:
+  uuid: SuccessConfirmPCPage2to3-1
+  enq_question_id: SuccessConfirmPCQuestion3
+  answer: 選択肢1
+  next_page_id: EnqPCSuccessConfirmPage3-1
+  wait_until: 1
+
+scPCpage2to3_2:
+  uuid: SuccessConfirmPCPage2to3-2
+  enq_question_id: SuccessConfirmPCQuestion3
+  answer: 選択肢2
+  next_page_id: EnqPCSuccessConfirmPage3-2
+  wait_until: 1
+
+scPCpage1to2_2_first:
+  uuid: SuccessConfirmPCPage1to2-2
+  enq_question_id: SuccessConfirmPCQuestion1First
+  answer: 東京都
+  next_page_id: EnqPCSuccessConfirmPage2-2First
+  wait_until: 1
+
+# スマートフォン用のnil動作確認データ
+nullable_SP:
+  uuid: BranchNullableSP
+  enq_question_id: NullableSPQuestion1
+  answer: Page1to2-2
+  next_page_id: NullableSPQuestion2-2
+
+nullable_SP_first:
+  uuid: BranchNullableSPFirst
+  enq_question_id: NullableSPQuestionFirst1
+  answer: Page1to2-2
+  next_page_id: EnqPageSPNullableFirst1Page2-2
+
+# PC用のnil動作確認データ
+nullable_PC:
+  uuid: BranchNullablePC
+  enq_question_id: NullablePCQuestion1
+  answer: Page1to2-2
+  next_page_id: NullablePCQuestion2-2
+
+nullable_PC_first:
+  uuid: BranchNullablePCFirst
+  enq_question_id: NullablePCQuestionFirst1
+  answer: Page1to2-2
+  next_page_id: EnqPagePCNullableFirst1Page2-2
+
+

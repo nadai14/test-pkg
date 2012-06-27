@@ -1,0 +1,110 @@
+<!doctype html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>API Test - NCI-201205 Test</title>
+		<link rel="stylesheet" href="qunit/qunit.css">
+		<script src="../../libs/jquery-1.7.2.min.js" ></script>
+		<script src="qunit/qunit.js"></script>
+		<script>
+			$(function(){
+				module('Campaign API(moviereward.nadai.jp:3001) test');
+				var _url = 'http://moviereward.nadai.jp:3001/api/v1/campaigns/CampaignSuccessConfirm';
+				
+				/**
+				 * 
+				 */
+			  asyncTest('With "X-Requested-By: poncan-moviereward"', function() {
+			  	$.ajax({
+						type:  "GET",
+						url:   _url,
+						data:  {
+							terminal:  'iPhone'
+						},
+						beforeSend: function(xhr, settings) { 
+							xhr.setRequestHeader("X-Requested-By","poncan-moviereward");
+						},
+						success:    function(data, status) {
+							ok(true,  status);
+							start();
+						},
+						complete:   function(xhr, textStatus){
+							
+						},
+						error:      function(xhr, status, error){
+							ok(false, 'HTTP ' + xhr.status);
+							start();
+						}
+					});
+			  });
+			  
+			  /**
+				 * 
+				 */
+			  asyncTest('With OUT "X-Requested-By: poncan-moviereward"', function() {
+			  	$.ajax({
+						type:  "GET",
+						url:   _url,
+						data:  {
+							terminal:  'iPhone'
+						},
+						beforeSend: function(xhr, settings) {
+							/* 
+							 * xhr.setRequestHeader("X-Requested-By","poncan-moviereward");
+							 */
+						},
+						complete:   function(xhr, textStatus){
+							if(xhr.status === 401) {
+								ok(true,  'HTTP ' + xhr.status);
+							}else{
+								ok(true,  'Unbexpected HTTP Status ' + xhr.status);
+							}
+							start();
+						}
+					});
+				});
+			  
+			  module('Campaign API(moviereward.nadai.jp:3001) test');
+			  
+			  /**
+				 * 
+				 */
+			  asyncTest('Answer test"', function() {
+			  	var _url  = 'http://moviereward.nadai.jp:3002/api/v1/enqs/PlusOneEnqID/pages/PlusOneSPEnqPage1/campaigns/PlusOneCampaignID/answers ';
+			  	// var _url  = 'http://nci-201205.sunbinet.local/nci-201205/api/v1/enqs/1/pages/1/campaigns/1/answers';
+			  	var _data = {
+			  		"session_id": "3175f6d7-a020-7ad0-cc3e-3372ea140f02",
+			  		"uid":        "asdfasdfasdfasdf",
+			  		"key":        "mixi_uid",
+			  		"answer_1[]":  ["男性"],
+			  	};
+			  	$.ajax({
+						type:  "POST",
+						url:   _url,
+						data:  _data,
+						beforeSend: function(xhr, settings) {
+							xhr.setRequestHeader("X-Requested-By","poncan-moviereward");
+						},
+						complete:   function(xhr, textStatus){
+							if(xhr.status !== 200) {
+								ok(false,  'HTTP ' + xhr.status + ' ' + textStatus);
+							}else{
+								ok(true);
+							}
+							start();
+						}
+					});
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+	</body>
+</html>
+
