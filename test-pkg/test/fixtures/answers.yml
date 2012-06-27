@@ -1,10 +1,29 @@
 # coding: utf-8
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-#one:
-#  uuid:
-#  campaign_id:
-#  enq_question_id: MyString
-#  user_id: MyString
-#  user_agent: MyString
-#  answer: MyText
+one:
+  uuid: testid
+  campaign_id: test_enq_id
+  enq_question_id: MyString
+  user_id: MyString
+  user_agent: MyString
+  answer: MyText
+
+two:
+  uuid: testid2
+  campaign_id: test_enq_id2
+  enq_question_id: MyString2
+  user_id: MyString2
+  user_agent: MyString2
+  answer: MyText2
+
+three:
+  uuid: testid3
+  campaign_id: test_enq_id3
+  enq_question_id: MyString3
+  user_id: MyString3
+  user_agent: MyString3
+  answer: MyText3
+
+
+
