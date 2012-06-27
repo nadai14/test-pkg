@@ -11,6 +11,7 @@ class CampaignsController < ApplicationController
     raise NotFoundException.new CAMPAIGN_DOES_NOT_EXIST unless @campaign
     raise ForbiddenException.new BEFORE_OPENING if @campaign.status == 0 # TODO: delete this line after 6/18
     raise ForbiddenException.new AFTER_CLOSING if @campaign.closed?
+	self.csv
     @movies = @campaign.movie.nil? ? [] : movies(@campaign.movie)
   end
 
@@ -27,5 +28,5 @@ class CampaignsController < ApplicationController
     {"type" => "video/x-flv",           "src" => ".flv"},
     {"type" => "video/mp4",             "src" => ".mp4"}
   ]
-
+  
 end

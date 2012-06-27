@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
   before_filter :check_requested_by, :except => :options
 
   def check_requested_by
-    raise UnauthorizedException.new UNAUTHORIZED unless request.headers["X-Requested-By"] == "poncan-moviereward"
+    #raise UnauthorizedException.new UNAUTHORIZED unless request.headers["X-Requested-By"] == "poncan-moviereward"
   end
 
   def append_header

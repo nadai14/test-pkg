@@ -12,6 +12,13 @@ RewardApi::Application.routes.draw do
       end
     end
   end
+  
+  scope "test/pkg" do
+	resources :csvs do
+	  get 'output', :on => :collection
+	  get 'export', :on => :collection
+	end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
