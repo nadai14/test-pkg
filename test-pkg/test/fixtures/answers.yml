@@ -4,7 +4,7 @@
 sc_iPhone_a1:
   uuid: iPhoneAnswerID1
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPhoneQuestion1
+  enq_question_id: SuccessConfirmSPQuestion1
   user_id: User-ID-1
   user_agent: iPhone
   answer: 男性
@@ -14,7 +14,7 @@ sc_iPhone_a1:
 sc_iPhone_a2:
   uuid: iPhoneAnswerID2
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPhoneQuestion2
+  enq_question_id: SuccessConfirmSPQuestion2
   user_id: User-ID-1
   user_agent: iPhone
   answer: 21
@@ -24,7 +24,7 @@ sc_iPhone_a2:
 sc_iPhone_a3:
   uuid: iPhoneAnswerID3
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPhoneQuestion3
+  enq_question_id: SuccessConfirmSPQuestion3
   user_id: User-ID-1
   user_agent: iPhone
   answer: 選択肢2
@@ -34,7 +34,7 @@ sc_iPhone_a3:
 sc_iPhone_a4-1:
   uuid: iPhoneAnswerID4-1
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPhoneQuestion4-1
+  enq_question_id: SuccessConfirmSPQuestion4-1
   user_id: User-ID-1
   user_agent: iPhone
   answer: チェックボックス1
@@ -44,8 +44,8 @@ sc_iPhone_a4-1:
 sc_Android_a1:
   uuid: AndroidAnswerID1
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmAndroidQuestion1
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion1
+  user_id: User-ID-2
   user_agent: Android
   answer: 女性
   updated_by: User-ID-1
@@ -54,8 +54,8 @@ sc_Android_a1:
 sc_Android_a2:
   uuid: AndroidAnswerID2
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmAndroidQuestion2
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion2
+  user_id: User-ID-2
   user_agent: Android
   answer: 34
   updated_by: User-ID-1
@@ -64,8 +64,8 @@ sc_Android_a2:
 sc_Android_a3:
   uuid: AndroidAnswerID3
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmAndroidQuestion3
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion3
+  user_id: User-ID-2
   user_agent: Android
   answer: 選択肢1
   updated_by: User-ID-1
@@ -74,8 +74,8 @@ sc_Android_a3:
 sc_Android_a4-2:
   uuid: AndroidAnswerID4-2
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmAndroidQuestion4-2
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion4-2
+  user_id: User-ID-2
   user_agent: Android
   answer: テキスト
   updated_by: User-ID-1
@@ -84,8 +84,8 @@ sc_Android_a4-2:
 sc_iPad_a1:
   uuid: iPadAnswerID1
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPadQuestion1
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion1
+  user_id: User-ID-3
   user_agent: iPad
   answer: 女性
   updated_by: User-ID-1
@@ -94,8 +94,8 @@ sc_iPad_a1:
 sc_iPad_a2:
   uuid: iPadAnswerID2
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPadQuestion2
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion2
+  user_id: User-ID-3
   user_agent: iPad
   answer: 14
   updated_by: User-ID-1
@@ -104,8 +104,8 @@ sc_iPad_a2:
 sc_iPad_a3:
   uuid: iPadAnswerID3
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPadQuestion3
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion3
+  user_id: User-ID-3
   user_agent: iPad
   answer: 選択肢1
   updated_by: User-ID-1
@@ -114,8 +114,8 @@ sc_iPad_a3:
 sc_iPad_a4-2:
   uuid: iPadAnswerID4-2
   campaign_id: CampaignSuccessConfirm
-  enq_question_id: SuccessConfirmiPadQuestion4-2
-  user_id: User-ID-1
+  enq_question_id: SuccessConfirmSPQuestion4-2
+  user_id: User-ID-3
   user_agent: iPad
   answer: テキスト2
   updated_by: User-ID-1
